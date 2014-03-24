@@ -1,42 +1,581 @@
-<div class="container theme-showcase" role="main">
+<!-- Content Section -->
+<div id="content_sec">
+  <!-- Column 1 -->
+    <div class="col1">
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <h1>Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Learn more &raquo;</a>
-    <div class="modal fade" id="modal-id">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Modal title</h4>
-          </div>
-          <div class="modal-body">
+        <!-- Recent Videos -->
+        <div class="recent_videos">
+          <div class="recent_head">
+              <h3>Danh sách videos</h3>
+                <div class="recent_buttons">
+                  <ul>
+                      <li class="gridbutn"><a href="#" class="switch_thumb">&nbsp;</a></li>
+                        <li>
+                          <a href="#" class="previousbtn">&nbsp;</a>
+                            <a href="#" class="nextbtn">&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <ul class="display">
+              <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/6lbABNXNuOk/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">Đăng bởi: <a href="#">Việt Milano</a></p>
+                            <p class="views"><span class="left">Lượt xem: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h5><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h5>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/ds4eGH5i09U/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/rS4-nFGUVU8/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/rS4-nFGUVU8/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/rS4-nFGUVU8/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/rS4-nFGUVU8/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/rS4-nFGUVU8/0.jpg" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                  <a href="#" class="thumb"></span><img src="<?=img_url()?>/video4.gif" alt="" /></a>
+                    <div class="bigsec">
+                      <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <div class="clear"></div>
+                        <div class="yourhere">
+                          <p>You are here:</p>
+                            <a href="#">Videos</a>
+                            <a href="#">Fashion</a>
+                            <a href="#" class="last">Kid</a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="txt">
+                          Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version) adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non,
+                        </p>
+                        <div class="clear"></div>
+                        <div class="postedby">
+                          <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
+                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                        </div>
+                        <div class="right">
+                          <p class="time">1:50</p>
+                          <p class="date"><span>3 days ago</span></p>
+                            <div class="rating">
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallsec">
+                      <h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                        <div class="clear"></div>
+                        <p class="time">1:50</p>
+                        <p class="date">3 days ago</p>
+                        <div class="clear"></div>
+                        <div class="rating">
+                          <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="colrd">&nbsp;</a>
+                            <a href="#" class="greyscal">&nbsp;</a>
+                            <p class="views">800 Views</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Column 2 -->
+    <div class="col2">
+      <!-- Advertisment -->
+      <div class="adv">
+          <a href="#"><img src="<?=img_url()?>/adv1.gif" alt="" /></a>
+        </div>
+        <div class="clear"></div>
+        <!-- Tabs -->
+        <div class="tabs">
+          <div class="tab_menu_container">
+                <ul id="tab_menu">  
+                    <li><a class="current" rel="tab_sidebar_recent">Recent</a></li>
+                    <li><a class="" rel="tab_sidebar_comments">Comments</a></li>
+                    <li><a class="" rel="tab_sidebar_tags">Tags</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
             
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-  </div>
-
-  <div class="page-header">
-    <h1>Wells</h1>
-  </div>
-  <div class="well">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-  </div>
-  <div class="well">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-  </div>
-  <div class="well">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-  </div>
-  <div class="well">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-  </div>
-</div> <!-- /container -->
+            <div class="tab_container">
+                <div class="tab_container_in">
+                    <!-- Recent --> 
+                    <div style="display: none;" id="tab_sidebar_recent" class="tab_sidebar_list">         
+                      <ul class="videolist">
+                          <li>
+                              <div class="thumb">
+                            <a href="#"></span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                            <a href="#"></span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                                  <a href="#"></span><img src="<?=img_url()?>/video7.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                                  <a href="#"></span><img src="<?=img_url()?>/video8.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
+                                </div>
+                            </li>
+                        </ul>     
+                    </div> 
+                    <!-- END -->
+                    <!-- Top Rated -->
+                    <div style="display: none;" id="tab_sidebar_comments" class="tab_sidebar_list">  
+                        <ul class="videolist">
+                          <li>
+                              <div class="thumb">
+                                  <a href="#"></span><img src="<?=img_url()?>/video8.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                                  <a href="#"></span><img src="<?=img_url()?>/video7.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                            <a href="#"></span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                            <a href="#"></span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+                    <!-- END -->
+                    <!-- Most Commented -->
+                    <div style="display: none;" id="tab_sidebar_tags" class="tab_sidebar_list"> 
+                        <ul class="videolist">
+                          <li>
+                              <div class="thumb">
+                            <a href="#"></span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                            <a href="#"></span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                                  <a href="#"></span><img src="<?=img_url()?>/video7.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="thumb">
+                                  <a href="#"></span><img src="<?=img_url()?>/video8.gif" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                  <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
+                                    <p class="viewscount">2,061,785 Views</p>
+                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END -->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <!-- Categories -->
+        <div class="categories">
+          <h5>Folow Funmea.com</h5>
+                <ul>
+                    <li><a href="#" class="youtube">www.YouTube.com</a></li>
+                    <li><a href="#" class="flickr">www.Flickr.com</a></li>
+                    <li><a href="#" class="facebook">www.facebook.com</a></li>
+                </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

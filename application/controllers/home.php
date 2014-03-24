@@ -9,7 +9,8 @@ class home extends MY_Controller {
 
 	public function index()
 	{
-		$this->load->view('home/index');
+		$data['title'] = 'Funny & Meaning :: Hài hước & Ý nghĩa';
+		$this->load->view('home/index',$data);
 	}
 }
 

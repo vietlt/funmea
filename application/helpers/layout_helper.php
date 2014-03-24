@@ -18,6 +18,15 @@ if ( ! function_exists('js_url'))
 	}
 }
 
+if ( ! function_exists('img_url'))
+{
+	function img_url($uri = '')
+	{
+		$CI =& get_instance();
+		return $CI->config->base_url('/assets/frontend/'.$CI->config->item('frontend_skin_dir').'/images/'.$uri);
+	}
+}
+
 if (! function_exists('backend_css_url'))
 {
 	function backend_css_url($uri = '')
