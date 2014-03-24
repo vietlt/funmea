@@ -9,11 +9,11 @@
 	margin:0px;
 }
 body {
-	background-image:url(../images/bigbg1.jpg);
+	/*background-image:url(../images/.jpg);*/
 	background-repeat:no-repeat;
 	background-position:50% 430px;
-	background-color:#000;
-	font-family:Verdana, Geneva, sans-serif;
+	background-color:#ececec;
+	font-family:Tahoma, Geneva, sans-serif;
 	font-size:11px;
 	color:#666;
 }
@@ -63,7 +63,8 @@ a img {
 	font-style:italic;
 }
 .colr {
-	color:#4b7eff !important;
+	color:#666 !important;
+	font-weight: bold
 }
 .white {
 	color:#fff !important;
@@ -119,7 +120,7 @@ input {
 	font-size:11px;
 }
 textarea {
-	font-family:Verdana, Geneva, sans-serif;
+	font-family:Tahoma, Geneva, sans-serif;
 	font-size:11px;
 	color:#666;
 }
@@ -293,10 +294,11 @@ ul.forms li.textsec textarea{
 	float:left;
 }
 .logo {
-	padding:27px 0px 0px 10px;
+	padding:12px 0px 0px 10px;
 	float:left;
 	width:200px;
 }
+.logo img {width: 210px}
 .navigation {
 	float:left;
 }
@@ -442,6 +444,9 @@ ul.forms li.textsec textarea{
 	background-color:#f7f7f7;
 	padding:1px;
 	margin:0px 10px;
+}
+#banner .tabssection a.toc span.thumb img{
+	width: 77px; height: 50px
 }
 #banner .tabssection a.toc span.desc{
 	float:right;
@@ -645,22 +650,25 @@ ul.forms li.textsec textarea{
 	padding:15px 0px;
 }
 .recent_videos ul.display li a.thumb{
-	width:155px;
-	height:113px;
 	float:left;
 	padding:3px;
 	border:#cccccc solid 1px;
 	background-color:#FFF;
 }
+.recent_videos ul.display li a.thumb img{
+	width: 340px
+}
 .recent_videos ul.display li .bigsec{
-	width:520px;
+	width:335px;
 	float:right;
 }
-ul.display li .bigsec h4{
+ul.display li .bigsec h5{
 	width:350px;
 	float:left;
 	padding-bottom:3px;
+	line-height: 22px
 }
+
 ul.display li .rating{
 	float:right;
 	padding-top:3px;
@@ -762,8 +770,9 @@ ul.display li .postedby p.views a{
 	margin-left:4px;
 }
 ul.display li .postedby a{
-	color:#bbbbbb;
-	text-decoration:underline;
+	font-size: 12px;
+	color:#005dff;
+	font-weight: bold
 }
 ul.display li p.time{
 	background-image: url("../images/watch.gif");
@@ -1001,6 +1010,7 @@ ul.videolist li .rated{
 	background-image:url(../images/categories.gif);
 	background-repeat:no-repeat;
 	background-position:7px 5px;
+	font-weight: bold
 }
 .categories ul{
 	width:143px;
@@ -2135,11 +2145,11 @@ ul.numbrs li{
 	Footer - our network
 =======================================================================
 */
-#footer .ournetwork{
+.ournetwork{
 	width:310px;
 	float:left;
 }
-#footer .ournetwork h3{
+.ournetwork h3{
 	background-image:url(../images/network.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
@@ -2149,17 +2159,17 @@ ul.numbrs li{
 	color:#FFF;
 	margin-bottom:10px;
 }
-#footer .ournetwork ul{
+.ournetwork ul{
 	list-style:none;
 	float:left;
 	width:310px;
 }
-#footer .ournetwork ul li{
+.ournetwork ul li{
 	float:left;
 	width:310px;
 	padding:5px 0px;
 }
-#footer .ournetwork ul li a{
+.ournetwork ul li a{
 	float:left;
 	width:284px;
 	padding:0px 0px 0px 26px;
@@ -2168,15 +2178,52 @@ ul.numbrs li{
 	background-position:0px 0px;
 	color:#FFF;
 }
-#footer .ournetwork ul li a.youtube{
+.ournetwork ul li a.youtube{
 	background-image:url(../images/playicon.gif);
 }
-#footer .ournetwork ul li a.flickr{
+.ournetwork ul li a.flickr{
 	background-image:url(../images/flikr.gif);
 }
-#footer .ournetwork ul li a.facebook{
+.ournetwork ul li a.facebook{
 	background-image:url(../images/facebook_icon.gif);
 }
+
+
+.categories ul{
+	list-style:none;
+	float:left;
+	width:310px;
+	padding-left: 20px;
+	border-left: 1px solid #eee;
+	margin-left: 1px;
+}
+.categories ul li{
+	float:left;
+	width:310px;
+	padding:5px 0px;
+}
+.categories ul li a{
+	float:left;
+	width:284px;
+	padding:0px 0px 0px 26px;
+	height:16px;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	color:#555;
+}
+.categories ul li a.youtube{
+	background-image:url(../images/playicon.gif);
+}
+.categories ul li a.flickr{
+	background-image:url(../images/flikr.gif);
+}
+.categories ul li a.facebook{
+	background-image:url(../images/facebook_icon.gif);
+}
+
+
+
+
 /*
 =======================================================================
 	Footer - Rules and Policies
