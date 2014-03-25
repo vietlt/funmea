@@ -666,11 +666,12 @@ input[type="submit"].btn.btn-mini {
 
 .form {
     padding-left: 20px;
-    font-size: 12px
+    font-size: 12px;
+    padding-top: 50px
 }
 .form .label{
     font-weight: bold;
-    margin-bottom: 4px;
+    line-height: 30px
 }
 .form input{
     width: 100%; height: 25px
@@ -678,4 +679,6 @@ input[type="submit"].btn.btn-mini {
 .form p {
     padding: 10px 0;
 }
-
+.form .textarea {
+    width: 100%; height: 400px;
+}

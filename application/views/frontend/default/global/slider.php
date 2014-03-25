@@ -1,18 +1,18 @@
 <!-- Banner -->
 <div id="banner">
     <div id="slider2" class="leftsecbanner">
+        <?foreach($new_videos as $key => $value):?>
         <div class="contentdiv">
-            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/-vqYyt0PPfE?fs=1&amp;hl=en_US&amp;rel=0">
+            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?fs=1&amp;hl=en_US&amp;rel=0">
                 <param name="movie" value="http://www.youtube.com/v/-vqYyt0PPfE?fs=1&amp;hl=en_US&amp;rel=0" />
                 <param value="application/x-shockwave-flash" name="type" /> 
                 <param value="true" name="allowfullscreen" /> 
                 <param value="always" name="allowscriptaccess" /> 
                 <param value="opaque" name="wmode" />
             </object>
-            <!-- <iframe width="100%" height="350" src="http://www.youtube.com/embed/iNhWyvxvlu8" frameborder="0"   allowfullscreen></iframe> -->
-
         </div>
-        <div class="contentdiv">
+        <?endforeach;?>
+        <!-- <div class="contentdiv">
             <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/tcat9CPiAZ4?fs=1&amp;hl=en_US&amp;rel=0">
                 <param name="movie" value="http://www.youtube.com/v/tcat9CPiAZ4?fs=1&amp;hl=en_US&amp;rel=0" />
                 <param value="application/x-shockwave-flash" name="type" /> 
@@ -29,7 +29,7 @@
                 <param value="always" name="allowscriptaccess" /> 
                 <param value="opaque" name="wmode" />
             </object>
-        </div>
+        </div> -->
         <div class="contentdiv">
             <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/pa14VNsdSYM?fs=1&amp;hl=en_US&amp;rel=0">
                 <param name="movie" value="http://www.youtube.com/v/pa14VNsdSYM?fs=1&amp;hl=en_US&amp;rel=0" />
@@ -283,14 +283,16 @@
             </ul>
             <div id="idTab1" class="tabssection">
                 <div class="css-scrollbar simple">
+                    <?foreach($new_videos as $key => $value):?>
                     <a href="#" class="toc">
-                        <span class="thumb"><img src="http://img.youtube.com/vi/-vqYyt0PPfE/3.jpg" alt="" /></span>
+                        <span class="thumb"><img src="http://img.youtube.com/vi/<?=$value->video_code?>/3.jpg" alt="" /></span>
                         <span class="desc">
-                            <span class="title">Cơn mưa ngang qua - Ver quẩy , gái xinh :3</span>
+                            <span class="title"><?=$value->video_title?></span>
                             <span class="time">03:54</span>
                             <span class="channel">RihannaVEVO</span>
                         </span>
                     </a>
+                    <?endforeach;?>
                     <a href="#" class="toc">
                         <span class="thumb"><img src="<?=img_url()?>/video_small2.gif" alt="" /></span>
                         <span class="desc">

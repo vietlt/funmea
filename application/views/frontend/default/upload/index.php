@@ -13,22 +13,13 @@
                 <br/>Và đừng quên đọc Nội quy ở bên phải nhé!
                 <br/>Nếu bạn quên cách đăng bài hoặc là thành viên mới vui lòng click vào <b><a id="showguide" href="javascript:void(0)">đây</a></b> để xem hướng dẫn !
             </div>
-            <script type="text/javascript">
-                $(document).on('click','#showguide',function(){
-                    $('#guide').slideDown(800);
-                });
-                $(document).on('click','.closeguide',function(){
-                    $('#guide').slideUp(800);
-                });
-
-            </script>
+            
         </div>
         <div class="clear"></div>
         <div class="alert alert-info" id="guide" style="display:none">
-            <button type="button" class="close closeguide" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <button type="button" class="close" id="close-guide" data-dismiss="alert" aria-hidden="true">&times;</button>
             <p><strong>Hướng dẫn cách post bài (Video & Ảnh gif)</strong> </p>
             <p>
-                
                 Lấy link Youtube và up lên diễn đàn
 
                 Bạn có thể lựa chòn clip bất kì hoặc dùng chức năng search để tìm clip mình cần
@@ -75,19 +66,83 @@
         </div>
         <div class="clear"></div>
         <div class="form-upload">
-            <form class="form">
-                <p>
-                    <span class="label">Tiêu đề bài đăng:</span>
-                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
-                </p>
-                <p>
-                    <span class="label">Mã video:</span>
-                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
-                </p>
-                <p>
-                     <button type="button" class="btn-red">Đăng bài</button>
-                </p>
-            </form>
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab_menu_container">
+                    <ul id="tab_menu">  
+                        <li><a class="current" rel="tab_sidebar_recent">Đăng video</a></li>
+                        <li><a class="" rel="tab_sidebar_comments">Đăng ảnh</a></li>
+                        <li><a class="" rel="tab_sidebar_tags">Đăng bài thú tội</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="tab_container">
+                    <div class="tab_container_in">
+                        <!-- Recent --> 
+                        <div style="display: none;" id="tab_sidebar_recent" class="tab_sidebar_list">                   
+                            <form class="form" id="form-post-videos" method="post">
+                                <p>
+                                    <label class="label">Tiêu đề bài đăng:</label>
+                                    <input type="text" name="videotitle" id="videotitle" class="form-control" value="" required="required" pattern="" title="">
+                                </p>
+                                <p>
+                                    <span class="label">Mã video:</span>
+                                    <input type="text" name="videocode" id="videocode" class="form-control" value="" required="required" pattern="" title="">
+                                </p>
+                                <p>
+                                    <span class="label">Viết mô tả:</span>
+                                    <textarea class="textarea" id="videodesc"></textarea>
+                                </p>
+                                <p>
+                                     <button type="button" id="btn-post-video" class="btn-red">Đăng bài</button>
+                                </p>
+                            </form>      
+                        </div> 
+                        <!-- END -->
+                        <!-- Top Rated -->
+                        <div style="display: none;" id="tab_sidebar_comments" class="tab_sidebar_list">  
+                            <form class="form">
+                                <p>
+                                    <span class="label">Tiêu đề bài đăng:</span>
+                                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                                </p>
+                                <p>
+                                    <span class="label">Đường dẫn ảnh (định dạng gif):</span>
+                                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                                </p>
+                                <p>
+                                    <span class="label">Hoặc chọn từ máy tính:</span>
+                                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                                </p>
+                                <p>
+                                     <button type="button" class="btn-red">Đăng bài</button>
+                                </p>
+                            </form>     
+                        </div> 
+                        <!-- END -->
+                        <!-- Most Commented -->
+                        <div style="display: none;" id="tab_sidebar_tags" class="tab_sidebar_list"> 
+                            <form class="form">
+                                <p>
+                                    <span class="label">Tiêu đề bài đăng:</span>
+                                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                                </p>
+                                <p>
+                                    <span class="label">Đường dẫn ảnh (định dạng gif):</span><br/>
+                                    <textarea class="textarea" rows="10" class="form-control" value="" required="required" pattern="" title=""></textarea>
+                                </p>
+                                <p>
+                                     <button type="button" class="btn-red">Đăng bài</button>
+                                </p>
+                            </form>  
+                        </div>
+                        <!-- END -->
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
         </div>
     </div>
     <!-- Column 2 -->
@@ -116,4 +171,20 @@
         </div>
         <div class="clear"></div>
     </div>
+    <script type="text/javascript" src="<?=js_url()?>/form_handle.js"></script>
+    <script type="text/javascript">
+        // $(document).on('click','#showguide',function(){
+        //     $('#guide').slideDown(800);
+        // });
+        // $(document).on('click','.closeguide',function(){
+        //     $('#guide').slideUp(800);
+        // });
+        $('#showguide').click(function(){
+            $('#guide').slideDown(800);
+        });
+
+        $('#close-guide').click(function(){
+            $('#guide').slideUp(800);
+        });
+    </script>
 </div>

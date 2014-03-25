@@ -2,7 +2,6 @@
 <div id="content_sec">
     <!-- Column 1 -->
     <div class="col1">
-
         <!-- Recent Videos -->
         <div class="recent_videos">
             <div class="recent_head">
@@ -10,19 +9,20 @@
                 <div class="recent_buttons">
                     <ul>
                         <li class="gridbutn"><a href="#" class="switch_thumb">&nbsp;</a></li>
-                        <li>
-                            <a href="#" class="previousbtn">&nbsp;</a>
-                            <a href="#" class="nextbtn">&nbsp;</a>
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="clear"></div>
             <ul class="display">
+                <?foreach($new_videos as $key => $value):?>
                 <li>
-                    <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/6lbABNXNuOk/0.jpg" alt="" /></a>
+                    <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
                     <div class="bigsec">
-                        <h5><a href="detail.html" class="colr">Đóa hoa vô thường - Trịnh Công Sơn (Acoustic Version)</a></h5>
+                        <h5><a href="detail.html" class="colr"><?=$value->video_title?></a></h5>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            <?=$value->video_description?>
+                        </p>
                         <div class="clear"></div>
                         <div class="postedby">
                             <p class="postbytxt">Đăng bởi: <a href="#">Việt Milano</a></p>
@@ -57,6 +57,7 @@
                         <div class="clear"></div>
                     </div>
                 </li>
+                <?endforeach;?>
                 <li>
                     <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/ds4eGH5i09U/0.jpg" alt="" /></a>
                     <div class="bigsec">
@@ -569,7 +570,7 @@
         <div class="clear"></div>
         <!-- Categories -->
         <div class="categories">
-            <h5>Folow Funmea.com</h5>
+            <h5>Nhanh tay kết nối Funmea.com</h5>
                 <ul>
                     <li><a href="#" class="youtube">www.YouTube.com</a></li>
                     <li><a href="#" class="flickr">www.Flickr.com</a></li>

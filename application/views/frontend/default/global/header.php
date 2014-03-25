@@ -5,7 +5,6 @@
         <ul>
             <li class="first"><a href="index.html">Trang chủ</a></li>
             <li><a href="#">Đăng nhập</a></li>
-            <li><a href="#">Đăng ký</a></li>
         </ul>
     </div>
     <!-- Top Section right Links -->
@@ -28,14 +27,10 @@
     <div class="navigation">
         <div id="smoothmenu1" class="ddsmoothmenu">
             <ul>
-                <li><a href="listing.html" class="staticlinks">Video hot</a></li>
-                <li><a href="news.html" class="staticlinks">Video chờ duyệt</a></li>
-                <li><a href="blog.html">Tin hot</a>
-                    <ul>
-                        <li><a href="blog_post.html">Tin hot</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">All Pages</a>
+                <li><a href="listing.html" class="staticlinks">Xem nhiều</a></li>
+                <li><a href="listing.html" class="staticlinks">Comment nhiều</a></li>
+                <li><a href="news.html" class="staticlinks">Đang chờ duyệt</a></li>
+                <li style="background-image: none !important"><a href="#">Tin tức</a>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="listing.html">Listing</a></li>
@@ -53,7 +48,7 @@
     </div>
     <!-- Search -->
     <div class="search">
-        <input type="text" value="Enter keyword to search" id="searchBox" name="s" onblur="if(this.value == '') { this.value = 'Enter keyword to search'; }" onfocus="if(this.value == 'Enter keyword to search') { this.value = ''; }" class="bar" />
+        <input type="text" value="Nhập từ khóa tìm kiếm..." id="searchBox" name="s" onblur="if(this.value == '') { this.value = 'Enter keyword to search'; }" onfocus="if(this.value == 'Enter keyword to search') { this.value = ''; }" class="bar" />
         <a href="#" class="go">&nbsp;</a>
     </div>
 </div>

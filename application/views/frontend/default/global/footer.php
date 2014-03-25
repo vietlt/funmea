@@ -29,7 +29,7 @@
 <div class="clear"></div>
 <div id="copyrights">
     <div class="inner">
-        <p>Copyright © 2013 Funmea.com. All rights reserved.</p>
+        <p>© <?=date(Y)?> <a href="#" class="link-website">Funmea.com</a> - Phiên bản thử nghiệm.</p>
         <div class="designdby">
             <p>Designed By: </p>
             <a href="#" class="chimplogo">&nbsp;</a>
