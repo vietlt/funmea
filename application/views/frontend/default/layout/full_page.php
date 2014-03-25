@@ -7,11 +7,13 @@
 <span class="biglines">&nbsp;</span>
 <!-- Wrapper -->
 <div id="wrapper_sec">
-    <?$this->load->block_view('global/header')?>
-    <?=$layout_content?>
-</div>
-    <?$this->load->block_view('global/footer')?>
 
+	<?$this->load->block_view('global/header')?>
+	<?$this->load->block_view('global/slider')?>
+	<?=$layout_content?>
+    
+</div>
 <div class="clear"></div>
+    <?$this->load->block_view('global/footer')?>
 </body>
 </html>

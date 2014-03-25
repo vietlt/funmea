@@ -1,8 +1,8 @@
-<!--// Javascript //-->
-<script type="text/javascript" src="<?=js_url()?>/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="<?=js_url()?>/jquery.min.js"></script>
 <script type="text/javascript" src="<?=js_url()?>/ddsmoothmenu.js"></script>
 <script type="text/javascript" src="<?=js_url()?>/menu.js"></script>
 <script type="text/javascript" src="<?=js_url()?>/contentslider.js"></script>
+<script type="text/javascript" src="<?=js_url()?>/jquery.1.4.2.js"></script>
 <script type="text/javascript" src="<?=js_url()?>/jquery.lint.js"></script>
 <script type="text/javascript" src="<?=js_url()?>/jquery.scroll.js"></script>
 <script type="text/javascript" src="<?=js_url()?>/scroll.js"></script>
