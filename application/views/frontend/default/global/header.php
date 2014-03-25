@@ -12,7 +12,7 @@
     <div class="links_icons">
         <ul>
             <li><a href="#" class="browse">Browse</a></li>
-            <li><a href="#" class="upload">Upload</a></li>
+            <li><a href="<?=base_url()?>upload" class="upload">Upload</a></li>
             <li class="last lang">Language: <a href="#"><img src="<?=img_url()?>/flag1.gif" alt="" /></a></li>
         </ul>
     </div>
@@ -22,7 +22,7 @@
 <div id="masthead">
     <!-- Logo -->
     <div class="logo">
-        <a href="index.html"><img src="<?=img_url()?>/logo.png" alt="" /></a>
+        <a href="<?=base_url()?>"><img src="<?=img_url()?>/logo.png" alt="" /></a>
     </div>
     <!-- Navigation -->
     <div class="navigation">

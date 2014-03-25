@@ -5,7 +5,7 @@ $config['backend_layout'] = 'full_page';
 $config['backend_template_dir'] = 'default';
 $config['backend_skin_dir'] = 'default';
 
-$config['frontend_layout'] = 'full_page';
+$config['frontend_layout'] = 'no_slider';
 $config['frontend_template_dir'] = 'default';
 $config['frontend_skin_dir'] = 'default';
 

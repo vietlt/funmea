@@ -414,7 +414,7 @@
         <div class="tabs">
             <div class="tab_menu_container">
                 <ul id="tab_menu">  
-                    <li><a class="current" rel="tab_sidebar_recent">Recent</a></li>
+                    <li><a class="current" rel="tab_sidebar_recent">Tin mới</a></li>
                     <li><a class="" rel="tab_sidebar_comments">Comments</a></li>
                     <li><a class="" rel="tab_sidebar_tags">Tags</a></li>
                 </ul>

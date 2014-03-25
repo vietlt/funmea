@@ -807,11 +807,11 @@ ul.display li p.date span{
 	list-style:none;
 }
 .recent_videos ul.thumb_view li{
-	width:163px !important;
-	height:200px !important;
-	float:left;
-	padding:0px 0px !important;
-	margin:0px 15px 20px 0px;
+	width: 334px !important;
+	height: 200px !important;
+	float: left;
+	padding: 22px 0px !important;
+	margin: 0 15px 20px 0px;
 }
 .recent_videos ul.thumb_view li .bigsec{
 	display:none;
@@ -924,7 +924,8 @@ ul.display li p.date span{
 .tabs .tab_menu_container ul li a.current{
 	padding:8px 24px 0px 23px;
 	background-color:#4b7eff;
-	color:#FFF
+	color:#FFF;
+	font-weight: bold;
 }
 ul.videolist {
 	float:left;
@@ -1009,7 +1010,7 @@ ul.videolist li .rated{
 	background-color:#eeeeee;
 	background-image:url(../images/categories.gif);
 	background-repeat:no-repeat;
-	background-position:7px 5px;
+	background-position:7px 9px;
 	font-weight: bold
 }
 .categories ul{
@@ -1077,13 +1078,13 @@ ul.videolist li .rated{
 	margin-bottom:10px;
 }
 #crumb h5{
-	width:92px;
+	/*width:92px;*/
 	height:19px;
 	padding:6px 0px 0px 10px;
-	background-image:url(../images/youarehere.gif);
 	background-repeat:no-repeat;
-	color:#FFF;
+	color:#444;
 	float:left;
+	font-weight: bold
 }
 #crumb ul{
 	float:left;
@@ -2192,15 +2193,18 @@ ul.numbrs li{
 .categories ul{
 	list-style:none;
 	float:left;
-	width:310px;
+	width:255px;
 	padding-left: 20px;
 	border-left: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 	margin-left: 1px;
 }
 .categories ul li{
 	float:left;
-	width:310px;
+	width:255px;
 	padding:5px 0px;
+	font-size: 12px;
+	text-indent: 14px
 }
 .categories ul li a{
 	float:left;

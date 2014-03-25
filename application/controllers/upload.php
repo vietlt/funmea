@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class home extends MY_Controller {
+class upload extends MY_Controller {
 
 	public function __construct()
 	{
@@ -9,9 +9,8 @@ class home extends MY_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Funny & Meaning :: Hài hước & Ý nghĩa';
-        $this->config->set_item('frontend_layout','full_page');
-		$this->load->view('home/index',$data);
+		$data['title'] = 'Funny & Meaning :: Đăng video mới';
+		$this->load->view('upload/index',$data);
 	}
 }
 
