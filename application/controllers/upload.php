@@ -7,7 +7,7 @@ class upload extends MY_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('video_model');
+		$this->load->model('post_model');
 	}
 	
 	public function index()
@@ -21,14 +21,17 @@ class upload extends MY_Controller
 		$videocode = $this->input->post('videocode');
 		$videotitle = $this->input->post('videotitle');
 		$videodesc = $this->input->post('videodesc');
-		$data = array(
-			'video_code' => $videocode,
-			'video_title' => $videotitle,
-			'video_description' => $videodesc,
-			'video_status' => 0
-		);
-		if($this->video_model->insert($data))
-			echo true;
+		if(!$this->post_model->check_video_code($videocode))
+		{
+			$data = array(
+				'post_title' => $videotitle,
+				'post_description' => $videodesc,
+				'video_code' => $videocode,
+				'post_status' => 0
+			);
+			if($this->post_model->insert($data))
+				echo true;
+		}
 		else
 			echo false;
 	}

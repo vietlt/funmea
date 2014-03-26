@@ -1,5 +1,5 @@
 <!-- Top Section -->
-<div class="top_sec">
+<div class="top_sec font-11">
     <!-- Top Section Left Links -->
     <div class="toplinks">
         <ul>
@@ -11,8 +11,8 @@
     <div class="links_icons">
         <ul>
             <li><a href="#" class="browse">Browse</a></li>
-            <li><a href="<?=base_url()?>upload" class="upload">Upload</a></li>
-            <li class="last lang">Language: <a href="#"><img src="<?=img_url()?>/flag1.gif" alt="" /></a></li>
+            <li><a href="<?=base_url()?>upload" class="upload">Đăng bài</a></li>
+            <li class="last lang">Ngôn ngữ: <a href="#"><img src="<?=img_url()?>/flag1.gif" alt="" /></a></li>
         </ul>
     </div>
 </div>

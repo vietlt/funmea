@@ -29,7 +29,7 @@
 <div class="clear"></div>
 <div id="copyrights">
     <div class="inner">
-        <p>© <?=date(Y)?> <a href="#" class="link-website">Funmea.com</a> - Phiên bản thử nghiệm.</p>
+        <p class="font-11">© <?=date(Y)?> <a href="#" class="link-website">Funmea.com</a> - Phiên bản thử nghiệm.</p>
         <div class="designdby">
             <p>Designed By: </p>
             <a href="#" class="chimplogo">&nbsp;</a>

@@ -14,9 +14,10 @@ body {
 	background-position:50% 430px;
 	background-color:#ececec;
 	font-family:Tahoma, Geneva, sans-serif;
-	font-size:11px;
+	font-size:12px;
 	color:#666;
 }
+.font-11 {font-size: 11px !important}
 .bg2 {
 	background-image:url(../images/bg2.jpg);
 	background-position:50% 153px;
