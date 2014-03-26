@@ -1,5 +1,3 @@
-
-<div id="content_sec">
     <!-- Bread Crumb -->
     <div id="crumb">
         <h5>Đăng video tại đây:</h5>
@@ -188,4 +186,3 @@
             $('#guide').slideUp(800);
         });
     </script>
-</div>

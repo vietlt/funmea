@@ -10,7 +10,9 @@
 
 	<?$this->load->block_view('global/header')?>
 	<?$this->load->block_view('global/slider')?>
+	<div id="content_sec">
 	<?=$layout_content?>
+	</div>
     
 </div>
 <div class="clear"></div>

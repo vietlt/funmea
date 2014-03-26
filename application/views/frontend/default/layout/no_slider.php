@@ -9,7 +9,9 @@
 <div id="wrapper_sec">
 
 	<?$this->load->block_view('global/header')?>
+	<div id="content_sec">
 	<?=$layout_content?>
+	</div>
     
 </div>
 <div class="clear"></div>

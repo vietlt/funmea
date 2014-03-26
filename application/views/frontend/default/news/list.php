@@ -1,209 +1,141 @@
+
     <!-- Bread Crumb -->
     <div id="crumb">
-        <h5>Người mua vui - Lil Shady ft. LEG </h5>
+        <h5>Danh sách tin tức</h5>
     </div>
     <!-- Column 1 -->
     <div class="col1">
-        <!-- Video Heading -->
-        <div class="clear"></div>
-        <!-- Video Detail -->
-        <div class="videodetail">
-            <!-- Short Detail -->
-            <div class="shortdetail">
-                <div class="videoby">
-                    <a href="#" class="videoavatar"><img src="<?=img_url()?>/videoby.gif" alt="" /></a>
-                    <p>Đăng bởi</p>
-                    <a href="#" class="bold name">Việt Lại</a>
-                </div>
-                <div class="videodate">Lúc 12h30', ngày 06/09/2014</div>
-                <div class="subscribe"><a href="#">Subscribe</a></div>
-                <div class="videoviews"><p>1,387,378 views</p></div>
-            </div>
-            <div class="clear"></div>
-            <!-- Big Video -->
-            <div class="videobig">
-                <object type="application/x-shockwave-flash" style="width:675px; height:438px;" data="http://www.youtube.com/v/bRvTcOXkiV0?fs=1&amp;hl=en_US&amp;rel=0">
-                    <param name="movie" value="http://www.youtube.com/v/pa14VNsdSYM?fs=1&amp;hl=en_US&amp;rel=0" />
-                    <param value="application/x-shockwave-flash" name="type" /> 
-                    <param value="true" name="allowfullscreen" /> 
-                    <param value="always" name="allowscriptaccess" /> 
-                    <param value="opaque" name="wmode" />
-                </object>
-            </div>
-            <div class="clear"></div>
-            <!-- Video tabs -->
-            <div class="videotabs">
-                <div class="tabbuttons">
-                    <ul class="likedilike">
-                        <li><a href="#" class="like">Like</a></li>
-                        <li><a href="#" class="dislike">Dislike</a></li>
-                    </ul>
-                    <ul class="tablinksselected">
-                        <li><a href="#"><span class="sharebtn">Share</span></a></li>
-                    </ul>
-                    <ul class="tablinks">
-                        <li><a href="#"><span class="embed">Embed</span></a></li>
-                    </ul>
-                    <ul class="tablinks">
-                        <li><a href="#"><span class="addto">Add to</span><span class="downarrow">&nbsp;</span></a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-                <div class="tabcont">
-                    <input type="text" value="htttp://www.Vidsea.com/watch?v=lpQTeYG6cGM" name="s" class="chain" />
-                    <input type="text" value="200" name="s" class="chrome" />
-                    <input type="text" value="1001" name="s" class="facebook1" />
-                    <input type="text" value="2000" name="s" class="twitter1" />
-                    <div class="clear"></div>
-                    <div class="shareicons">
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon1.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon2.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon3.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon4.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon5.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon6.gif" alt="" /></a>
+        <div class="blog">
+            <ul class="bloglisting">
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog1.gif" alt="" /></a>
                     </div>
-                </div>
-            </div>
-            <!-- Comments -->
-            <div class="comments">
-                <h2 class="heading">477 comments</h2>
-                <textarea name="" cols="" rows=""></textarea>
-                <p class="characters">500 characters remaining</p>
-                <ul class="textareasubmission">
-                    <li class="txt"><a href="#">Cancel</a> or</li>
-                    <li><a href="#" class="post">Post</a></li>
-                    <li class="txt"><a href="#" class="attachment">Attach a video </a></li>
-                </ul>
-                <ul class="commentslist">
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments1.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments2.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments3.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments4.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level2">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments5.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level2">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments6.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments7.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog2.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Nulla sem risus, vestibulum in</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog3.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Morbi porta porta arcu</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog4.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog5.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Maecenas sagittis massa ac dui</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog6.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog7.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Cras facilisis diam id laoreet condimentum</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <a href="blog_post.html"><img src="<?=img_url()?>/blog8.gif" alt="" /></a>
+                    </div>
+                    <div class="desc">
+                        
+                        <h5><a href="blog_post.html" class="colr">Vestibulum a augue Fusce nisi tellus</a></h5>
+                        <p class="time">January 15, 2011</p>
+                        <p class="postedby">Posted By: RayWilliams</p>
+                        <div class="clear"></div>
+                        <p class="txt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulu volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus...
+                        </p>
+                        <a href="blog_post.html" class="colr readmore">Xem tiếp...</a>
+                    </div>
+                </li>
+            </ul>
             <div class="clear"></div>
             <!-- Pagination -->
             <div class="paginations">
@@ -227,9 +159,39 @@
                 </ul>
             </div>
         </div>
+        <div class="clear"></div>
     </div>
     <!-- Column 2 -->
     <div class="col2">
+        <!-- Categories -->
+        <div class="categories">
+            <h5>Categories</h5>
+            <ul>
+                <li><a href="#" class="colr">Action</a></li>
+                <li><a href="#" class="colr">Art &amp; Animation</a></li>
+                <li><a href="#" class="colr">Entertainment &amp; TV</a></li>
+                <li><a href="#" class="colr">Food</a></li>
+                <li><a href="#" class="colr">Games</a></li>
+                <li><a href="#" class="colr">How-To</a></li>
+                <li><a href="#" class="colr">Music</a></li>
+                <li><a href="#" class="colr">People &amp; Vlogs</a></li>
+                <li><a href="#" class="colr">Environment</a></li>
+                <li><a href="#" class="colr">Transportation</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="colr">Animals</a></li>
+                <li><a href="#" class="colr">Commercials</a></li>
+                <li><a href="#" class="colr">Family</a></li>
+                <li><a href="#" class="colr">Funny Videos</a></li>
+                <li><a href="#" class="colr">Health &amp; Beauty</a></li>
+                <li><a href="#" class="colr">Movies &amp; Shorts</a></li>
+                <li><a href="#" class="colr">News &amp; Politics</a></li>
+                <li><a href="#" class="colr">Products &amp; Tech</a></li>
+                <li><a href="#" class="colr">Sports</a></li>
+                <li><a href="#" class="colr">Travel</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
         <!-- Tabs -->
         <div class="tabs">
             <div class="tab_menu_container">
@@ -419,6 +381,7 @@
             <a href="#" class="buttonone"><span>Most Viewed Videos</span></a>
             <a href="#" class="buttonone"><span>Recent Videos</span></a>
         </div>
+        <div class="clear"></div>
         <!-- Advertisment -->
         <div class="adv">
             <a href="#"><img src="<?=img_url()?>/adv1.gif" alt="" /></a>

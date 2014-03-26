@@ -12,7 +12,7 @@
         <ul>
             <li><a href="#" class="browse">Browse</a></li>
             <li><a href="<?=base_url()?>upload" class="upload">Đăng bài</a></li>
-            <li class="last lang">Ngôn ngữ: <a href="#"><img src="<?=img_url()?>/flag1.gif" alt="" /></a></li>
+            <li class="last"><a class="lang" href="<?=base_url()?>contact">Liên hệ</a></li>
         </ul>
     </div>
 </div>
