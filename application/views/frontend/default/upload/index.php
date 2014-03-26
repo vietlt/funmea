@@ -1,4 +1,4 @@
-<!-- Content Section -->
+
 <div id="content_sec">
     <!-- Bread Crumb -->
     <div id="crumb">
@@ -17,7 +17,7 @@
         </div>
         <div class="clear"></div>
         <div class="alert alert-info" id="guide" style="display:none">
-            <button type="button" class="close" id="close-guide" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <button type="button" class="close" id="close-guide">&times;</button>
             <p><strong>Hướng dẫn cách post bài (Video & Ảnh gif)</strong> </p>
             <p>
                 Lấy link Youtube và up lên diễn đàn
@@ -92,7 +92,7 @@
                                 </p>
                                 <p>
                                     <span class="label">Viết mô tả:</span>
-                                    <textarea class="textarea" id="videodesc"></textarea>
+                                    <textarea class="textarea" id="videodesc" name="videodesc"></textarea>
                                 </p>
                                 <p>
                                      <button type="button" id="btn-post-video" class="btn-red">Đăng bài</button>
@@ -113,7 +113,7 @@
                                 </p>
                                 <p>
                                     <span class="label">Hoặc chọn từ máy tính:</span>
-                                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                                    <input type="file" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
                                 </p>
                                 <p>
                                      <button type="button" class="btn-red">Đăng bài</button>
@@ -171,19 +171,20 @@
         </div>
         <div class="clear"></div>
     </div>
-    <script type="text/javascript" src="<?=js_url()?>/form_handle.js"></script>
+
+    <script src="<?=js_url()?>/bootstrap/bootstrap.min.js"></script>
+    <script src="<?=js_url()?>/script_dialog.js"></script>
+    <script src="<?=js_url()?>/form_handle.js"></script>
     <script type="text/javascript">
-        // $(document).on('click','#showguide',function(){
-        //     $('#guide').slideDown(800);
-        // });
-        // $(document).on('click','.closeguide',function(){
-        //     $('#guide').slideUp(800);
-        // });
-        $('#showguide').click(function(){
+        function Test()
+        {
+            new ShowMessage().msg('Are you sure???',1);
+        }
+
+        $(document).on('click','#showguide',function(){
             $('#guide').slideDown(800);
         });
-
-        $('#close-guide').click(function(){
+        $(document).on('click','#close-guide',function(){
             $('#guide').slideUp(800);
         });
     </script>
