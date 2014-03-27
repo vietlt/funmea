@@ -29,8 +29,8 @@ class upload extends MY_Controller
 				'post_description' => $videodesc,
 				'video_code' => $videocode,
 				'post_type' => 1,
-				'post_status' => 1
-				// 'post_slug' => gen_slug($videotitle)
+				'post_status' => 1,
+				'post_slug' => gen_slug($videotitle)
 			);
 			if($this->post_model->insert($data))
 				echo true;
