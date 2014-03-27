@@ -5,7 +5,7 @@ class test extends MY_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('video_model');
+		$this->load->model('post_model');
 
 	}
 
