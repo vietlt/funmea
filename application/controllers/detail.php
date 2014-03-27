@@ -15,6 +15,6 @@ class detail extends MY_Controller {
 		{
 			show_404('page' ,['log_error']);
 		}
-		$this->load->view('detail/video',$data);
+		$this->load->view('video/detail',$data);
 	}
 }
