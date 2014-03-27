@@ -17,7 +17,7 @@
                 </div>
                 <div class="videodate">Lúc 12h30', ngày 06/09/2014</div>
                 <div class="subscribe"><a href="#">Subscribe</a></div>
-                <div class="videoviews"><p>1,387,378 views</p></div>
+                <div class="videoviews"><p><?=$detail->getVideo_code()?> views</p></div>
             </div>
             <div class="clear"></div>
             <!-- Big Video -->
