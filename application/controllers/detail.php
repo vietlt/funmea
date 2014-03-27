@@ -6,8 +6,6 @@ class detail extends MY_Controller {
 	{
 		parent::__construct();
 		$this->load->model('post_model');
-		$this->load->helper('cus_string');
-		// $this->post_model = new post_model();
 	}
 
 	public function video($slug)

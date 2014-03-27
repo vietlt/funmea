@@ -280,8 +280,11 @@ ul.forms li.textsec textarea{
 	background-position:left;
 	padding-left:20px;
 }
-.top_sec .links_icons ul li.lang a{
-	margin-right:2px;
+.top_sec .links_icons ul li a.lang{
+	background-image:url(../images/contact.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding-left:20px;
 }
 /*
 =======================================================================
@@ -888,6 +891,8 @@ ul.display li p.date span{
 	width:286px;
 	float:left;
 	margin-bottom:20px;
+	border: 1px solid #e1e1e1;
+	padding: 1px;
 }
 /*
 =======================================================================
@@ -1182,15 +1187,17 @@ ul.videolist li .rated{
 .allvideos_heading h1{
 	float:left;
 	margin-right:10px;
-	padding:14px 0px 0px 0px;
+	padding:5px 0px 10px 0px;
 }
-.allvideos_heading h3{
+.allvideos_heading h4{
 	background-image:url(../images/allvideo.png);
 	background-repeat:no-repeat;
 	background-position:left;
 	float:left;
 	margin-right:10px;
-	padding:4px 0px 0px 25px;
+	padding:3px 0px 0px 25px;
+	font-size: 14px;
+	font-weight: bold;
 }
 .allvideos_heading p{
 	padding:3px 0px 0px 0px;
@@ -1209,7 +1216,7 @@ ul.videolist li .rated{
 	padding:0px 4px 0px 10px;
 	background-color:#FFF;
 	border:#eeeeee solid 1px;
-	margin:0px 0px 20px 0px;
+	margin:0px 0px 15px 0px;
 }
 .whitesec_search p{
 	float:left;
@@ -1269,10 +1276,11 @@ ul.videolist li .rated{
 .shortdetail .videoby p{
 	float:left;
 	margin:0px 5px;
+	line-height: 25px;
 }
 .shortdetail .videoby a.name{
 	float:left;
-	line-height:18px;
+	line-height:25px;
 }
 .videodetail .shortdetail .videodate{
 	float:left;
@@ -1678,6 +1686,8 @@ ul.videolist li .rated{
 	width:697px;
 	margin:0px 0px 20px 0px;
 	float:left;
+	border: 1px solid #e1e1e1;
+	padding: 1px;
 }
 /*
 =======================================================================
@@ -1798,7 +1808,7 @@ ul.videolist li .rated{
 	width:520px;
 	float:left;
 }
-.blog ul.bloglisting li .desc h3{
+.blog ul.bloglisting li .desc h5{
 	padding-bottom:7px;
 }
 .blog ul.bloglisting li .desc p.txt{

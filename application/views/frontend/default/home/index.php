@@ -1,5 +1,3 @@
-<!-- Content Section -->
-<div id="content_sec">
     <!-- Column 1 -->
     <div class="col1">
         <!-- Recent Videos -->
@@ -61,6 +59,7 @@
                 <?endif;?>
                 <?endforeach;?>
             </ul>
+            <a href="#" class="btn-success">Xem thêm nhiều nhiều nữa...</a>
         </div>
     </div>
     <!-- Column 2 -->
@@ -238,4 +237,3 @@
         </div>
         <div class="clear"></div>
     </div>
-</div>
