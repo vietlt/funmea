@@ -1098,6 +1098,15 @@ ul.videolist li .rated{
 	float:left;
 	font-weight: bold
 }
+#crumb h1{
+	height:19px;
+	padding:6px 0px 0px 10px;
+	background-repeat:no-repeat;
+	color:#444;
+	float:left;
+	font-weight: bold;
+	font-size: 14px;
+}
 #crumb ul{
 	float:left;
 	list-style:none;

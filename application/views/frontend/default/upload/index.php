@@ -1,6 +1,6 @@
     <!-- Bread Crumb -->
     <div id="crumb">
-        <h5>Đăng video tại đây:</h5>
+        <h1>Đăng video tại đây:</h1>
     </div>
     <!-- Column 1 -->
     <div class="col1">

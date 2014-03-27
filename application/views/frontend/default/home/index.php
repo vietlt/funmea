@@ -2,14 +2,7 @@
     <div class="col1">
         <!-- Recent Videos -->
         <div class="recent_videos">
-            <div class="recent_head">
-                <h3>Danh sách videos</h3>
-                <div class="recent_buttons">
-                    <ul>
-                        <li class="gridbutn"><a href="#" class="switch_thumb">&nbsp;</a></li>
-                    </ul>
-                </div>
-            </div>
+            <h3>Danh sách videos</h3>
             <div class="clear"></div>
             <ul class="display">
                 <?foreach($new_videos as $key => $value):?>

@@ -14,6 +14,16 @@ class video extends MY_Controller {
 		$data['new_videos'] = $this->post_model->get_new_videos(10);
 		$this->load->view('video/list',$data);
 	}
+
+	public function detail($slug)
+	{
+		$data['detail'] = $this->post_model->get_detail($slug,1);
+		if($data['detail']==0)
+		{
+			show_404('page' ,['log_error']);
+		}
+		$this->load->view('video/detail',$data);
+	}
 }
 
 /* End of file home.php */
