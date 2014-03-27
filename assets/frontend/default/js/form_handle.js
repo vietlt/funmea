@@ -6,6 +6,11 @@ $('#btn-post-video').click(function() {
         type: 'post',
         data: $('#form-post-videos').serialize(),
         success: function(data) {
+            console.log(data);
+            if(data=='warning')
+            {
+                dialog.msgWarning('Đăng bài không thành công , mã video có thể đã tồn tại . Vui lòng thử lại !');
+            }
             if(data)
             {
             	dialog.msgSuccess('Đăng bài thành công , bài viết của bạn sẽ được lên trang chủ sau khi được kiểm duyệt !');
@@ -13,7 +18,7 @@ $('#btn-post-video').click(function() {
             }
             else
             {
-                dialog.msgError('Đăng bài không thành công, mã video bạn vừa đăng có thể đã tồn tại . Vui lòng thử lại ^^');
+                dialog.msgError('Đăng bài không thành công, có lỗi xảy ra trong quá trình thực thi !');
             }
         }
     });

@@ -22,8 +22,8 @@
             <div class="clear"></div>
             <!-- Big Video -->
             <div class="videobig">
-                <object type="application/x-shockwave-flash" style="width:675px; height:438px;" data="http://www.youtube.com/v/bRvTcOXkiV0?fs=1&amp;hl=en_US&amp;rel=0">
-                    <param name="movie" value="http://www.youtube.com/v/pa14VNsdSYM?fs=1&amp;hl=en_US&amp;rel=0" />
+                <object type="application/x-shockwave-flash" style="width:675px; height:438px;" data="http://www.youtube.com/v/bRvTcOXkiV0?fs=1&amp;hl=en_US&amp;rel=0&amp;nologo=0&amp;showinfo=0">
+                    <param name="movie" value="http://www.youtube.com/v/pa14VNsdSYM?fs=1&amp;hl=en_US&amp;rel=0&amp;nologo=0&amp;showinfo=0" />
                     <param value="application/x-shockwave-flash" name="type" /> 
                     <param value="true" name="allowfullscreen" /> 
                     <param value="always" name="allowscriptaccess" /> 

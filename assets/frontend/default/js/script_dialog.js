@@ -1,30 +1,27 @@
 
     function ShowMessage() {
         this.msgError = function(msg) {
-        	status = 'error';
             setTimeout(function() { // then show popup, deley in .5 second
-                loadPopup(msg,status); // function show popup
+                loadPopup(msg,'error'); // function show popup
             }, 500); // .5 second
             return false;
         }
         this.msgInfor = function(msg) {
         	status = 'infor';
             setTimeout(function() { // then show popup, deley in .5 second
-                loadPopup(msg,status); // function show popup
+                loadPopup(msg,'infor'); // function show popup
             }, 500); // .5 second
             return false;
         }
         this.msgSuccess = function(msg) {
-        	status = 'success';
             setTimeout(function() { // then show popup, deley in .5 second
-                loadPopup(msg,status); // function show popup
+                loadPopup(msg,'success'); // function show popup
             }, 500); // .5 second
             return false;
         }
-        this.msgWarnning = function(msg) {
-        	status = 'warning';
+        this.msgWarning = function(msg) {
             setTimeout(function() { // then show popup, deley in .5 second
-                loadPopup(msg,status); // function show popup
+                loadPopup(msg,'warning'); // function show popup
             }, 500); // .5 second
             return false;
         }
@@ -65,18 +62,19 @@
 
     var popupStatus = 0; // set value
     function loadPopup(msg, status) {
+        // console.log(status);
     	var str = '';
         if (status == 'error') str = '<button type="button" class="btn-red" onclick="disablePopup()">Thử lại</button>';
         if (status == 'success') str = '<button type="button" class="btn-success" onclick="disablePopup()">Đồng ý</button>';
         if (status == 'infor') str = '<button type="button" class="btn-infor"> onclick="disablePopup()"Save changes</button>';
-        if (status == 'warning') str = '<button type="button" class="btn-warning" onclick="disablePopup()">Save changes</button>';
+        if (status == 'warning') str = '<button type="button" class="btn-warning" onclick="disablePopup()">Thử lại</button>';
 
         if (popupStatus == 0) { // if value is 0, show popup
             $('body:first').append(
             	'<div id="toPopup" class="modal-dialog">' + 
             	'<div class="modal-content">' + '<div class="modal-header">' + 
             	'<button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="disablePopup()">&times;</button>' + 
-            	'<h4 class="modal-title '+status+'">Thông báo từ Funmea.com</h4>' + '</div>' + '<div class="modal-body">' + msg + '</div>' + 
+            	'<h5 class="modal-title '+status+'">Thông báo từ Funmea.com</h5>' + '</div>' + '<div class="modal-body">' + msg + '</div>' + 
             	'<div class="modal-footer">' + 
             	str + 
             	'</div>' + '</div>' + '</div>' + '<div id="backgroundPopup"></div>');
