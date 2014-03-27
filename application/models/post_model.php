@@ -28,5 +28,16 @@ class post_model extends MY_Model
     {
     	return $this->get_by('video_code',$video_code);
     }
-
+    public function get_detail($slug,$status)
+    {
+        if($slug!=null)
+        {
+            $array = array('post_slug' => $slug, 'post_status' => 1);
+            return $this->get_by($array);
+        }
+        else
+        {
+            return 0;
+        }
+    }
 }

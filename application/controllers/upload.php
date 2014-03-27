@@ -8,6 +8,7 @@ class upload extends MY_Controller
 	{
 		parent::__construct();
 		$this->load->model('post_model');
+		$this->load->helper('cus_string');
 	}
 	
 	public function index()
@@ -27,7 +28,9 @@ class upload extends MY_Controller
 				'post_title' => $videotitle,
 				'post_description' => $videodesc,
 				'video_code' => $videocode,
-				'post_status' => 0
+				'post_type' => 1,
+				'post_status' => 1,
+				'post_slug' => gen_slug($videotitle)
 			);
 			if($this->post_model->insert($data))
 				echo true;

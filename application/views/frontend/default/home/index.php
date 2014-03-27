@@ -15,48 +15,50 @@
             <div class="clear"></div>
             <ul class="display">
                 <?foreach($new_videos as $key => $value):?>
-                <li>
-                    <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
-                    <div class="bigsec">
-                        <h5><a href="detail.html" class="colr"><?=$value->post_title?></a></h5>
-                        <div class="clear"></div>
-                        <p class="txt">
-                            <?=$value->post_description?>
-                        </p>
-                        <div class="clear"></div>
-                        <div class="postedby">
-                            <p class="postbytxt">Đăng bởi: <a href="#">Việt Milano</a></p>
-                            <p class="views"><span class="left">Lượt xem: </span><a href="#">800</a></p>
+                <?if($value->post_type==1):?>
+                    <li>
+                        <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
+                        <div class="bigsec">
+                            <h5><a href="video/<?=$value->post_slug?>" class="colr"><?=$value->post_title?></a></h5>
+                            <div class="clear"></div>
+                            <p class="txt">
+                                <?=$value->post_description?>
+                            </p>
+                            <div class="clear"></div>
+                            <div class="postedby">
+                                <p class="postbytxt">Đăng bởi: <a href="#">Việt Milano</a></p>
+                                <p class="views"><span class="left">Lượt xem: </span><a href="#">800</a></p>
+                            </div>
+                            <div class="right">
+                                <p class="time">1:50</p>
+                                <p class="date"><span>3 days ago</span></p>
+                                <div class="rating">
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="greyscal">&nbsp;</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="right">
+                        <div class="smallsec">
+                            <h5><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h5>
+                            <div class="clear"></div>
                             <p class="time">1:50</p>
-                            <p class="date"><span>3 days ago</span></p>
+                            <p class="date">3 days ago</p>
+                            <div class="clear"></div>
                             <div class="rating">
                                 <a href="#" class="colrd">&nbsp;</a>
                                 <a href="#" class="colrd">&nbsp;</a>
                                 <a href="#" class="colrd">&nbsp;</a>
                                 <a href="#" class="colrd">&nbsp;</a>
                                 <a href="#" class="greyscal">&nbsp;</a>
+                                <p class="views">800 Views</p>
                             </div>
+                            <div class="clear"></div>
                         </div>
-                    </div>
-                    <div class="smallsec">
-                        <h5><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h5>
-                        <div class="clear"></div>
-                        <p class="time">1:50</p>
-                        <p class="date">3 days ago</p>
-                        <div class="clear"></div>
-                        <div class="rating">
-                            <a href="#" class="colrd">&nbsp;</a>
-                            <a href="#" class="colrd">&nbsp;</a>
-                            <a href="#" class="colrd">&nbsp;</a>
-                            <a href="#" class="colrd">&nbsp;</a>
-                            <a href="#" class="greyscal">&nbsp;</a>
-                            <p class="views">800 Views</p>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </li>
+                    </li>
+                <?endif;?>
                 <?endforeach;?>
             </ul>
         </div>
