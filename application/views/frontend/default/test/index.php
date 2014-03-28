@@ -66,144 +66,16 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="comments">
-                <h2 class="heading">477 comments</h2>
-                <textarea name="" cols="" rows=""></textarea>
-                <p class="characters">500 characters remaining</p>
-                <ul class="textareasubmission">
-                    <li class="txt"><a href="#">Cancel</a> or</li>
-                    <li><a href="#" class="post">Post</a></li>
-                    <li class="txt"><a href="#" class="attachment">Attach a video </a></li>
-                </ul>
-                <ul class="commentslist">
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments1.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments2.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments3.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments4.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level2">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments5.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level2">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments6.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="level1">
-                        <div class="thumb">
-                            <a href="#"><img src="<?=img_url()?>/comments7.gif" alt="" /></a>
-                        </div>
-                        <div class="desc">
-                            <div class="commentlinks">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="like">Like</a>
-                                <a href="#" class="dislike">Dislike</a>
-                            </div>
-                            <h5><a href="#" class="colr">By MySebbb:</a></h5>
-                            <p class="time">7 months ago</p>
-                            <div class="clear"></div>
-                            <p class="txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "http://connect.facebook.net/vi_VN/all.js#xfbml=1&appId=1479900725559027";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <div class="fb-comments" data-href="http://example.com/comments" data-numposts="5" data-colorscheme="light"></div>
             <div class="clear"></div>
             <!-- Pagination -->
             <div class="paginations">

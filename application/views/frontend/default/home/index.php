@@ -8,9 +8,9 @@
                 <?foreach($new_videos as $key => $value):?>
                 <?if($value->post_type==1):?>
                     <li>
-                        <a href="#" class="thumb"></span><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
+                        <a href="<?=base_url()?>video/<?=$value->post_slug?>" class="thumb"></span><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
                         <div class="bigsec">
-                            <h5><a href="video/<?=$value->post_slug?>" class="colr"><?=$value->post_title?></a></h5>
+                            <h5><a href="<?=base_url()?>video/<?=$value->post_slug?>" class="colr"><?=$value->post_title?></a></h5>
                             <div class="clear"></div>
                             <p class="txt">
                                 <?=$value->post_description?>
@@ -52,7 +52,7 @@
                 <?endif;?>
                 <?endforeach;?>
             </ul>
-            <a href="#" class="btn-success">Xem thêm nhiều nhiều nữa...</a>
+            <a href="#" class="btn">Xem thêm nhiều nhiều nữa...</a>
         </div>
     </div>
     <!-- Column 2 -->

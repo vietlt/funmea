@@ -18,6 +18,7 @@ class video extends MY_Controller {
 	public function detail($slug)
 	{
 		$data['detail'] = $this->post_model->get_detail($slug,1);
+		$data['title'] = $data['detail']->getPost_title().' ::Funny & Meaning';
 		if($data['detail']==0)
 		{
 			show_404('page' ,['log_error']);

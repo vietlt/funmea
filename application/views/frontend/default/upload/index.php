@@ -93,7 +93,7 @@
                                     <textarea class="textarea" id="videodesc" name="videodesc"></textarea>
                                 </p>
                                 <p>
-                                     <button type="button" id="btn-post-video" class="btn-red">Đăng bài</button>
+                                     <button type="button" id="btn-post-video" class="btn">Đăng bài</button>
                                 </p>
                             </form>      
                         </div> 
@@ -114,7 +114,7 @@
                                     <input type="file" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
                                 </p>
                                 <p>
-                                     <button type="button" class="btn-red">Đăng bài</button>
+                                     <button type="button" class="btn">Đăng bài</button>
                                 </p>
                             </form>     
                         </div> 
@@ -131,7 +131,7 @@
                                     <textarea class="textarea" rows="10" class="form-control" value="" required="required" pattern="" title=""></textarea>
                                 </p>
                                 <p>
-                                     <button type="button" class="btn-red">Đăng bài</button>
+                                     <button type="button" class="btn">Đăng bài</button>
                                 </p>
                             </form>  
                         </div>

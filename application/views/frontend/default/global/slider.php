@@ -3,7 +3,7 @@
     <div id="slider2" class="leftsecbanner">
         <?foreach($new_videos as $key => $value):?>
         <div class="contentdiv">
-            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?fs=1&amp;hl=en_US&amp;rel=0">
+            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?showinfo=0;?fs=1&amp;hl=en_US&amp;rel=0">
                 <param name="movie" value="http://www.youtube.com/v/-vqYyt0PPfE?fs=1&amp;hl=en_US&amp;rel=0" />
                 <param value="application/x-shockwave-flash" name="type" /> 
                 <param value="true" name="allowfullscreen" /> 
@@ -15,7 +15,7 @@
 
         <?foreach($unwatch_videos as $key => $value):?>
         <div class="contentdiv">
-            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?fs=1&amp;hl=en_US&amp;rel=0">
+            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?showinfo=0;?fs=1&amp;hl=en_US&amp;rel=0">
                 <param name="movie" value="http://www.youtube.com/v/-vqYyt0PPfE?fs=1&amp;hl=en_US&amp;rel=0" />
                 <param value="application/x-shockwave-flash" name="type" /> 
                 <param value="true" name="allowfullscreen" /> 
@@ -27,7 +27,7 @@
 
         <?foreach($seemore_videos as $key => $value):?>
         <div class="contentdiv">
-            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?fs=1&amp;hl=en_US&amp;rel=0">
+            <object type="application/x-shockwave-flash" style="width:660px; height:348px;" data="http://www.youtube.com/v/<?=$value->video_code?>?showinfo=0;?fs=1&amp;hl=en_US&amp;rel=0">
                 <param name="movie" value="http://www.youtube.com/v/-vqYyt0PPfE?fs=1&amp;hl=en_US&amp;rel=0" />
                 <param value="application/x-shockwave-flash" name="type" /> 
                 <param value="true" name="allowfullscreen" /> 

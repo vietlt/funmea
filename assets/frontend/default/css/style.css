@@ -667,7 +667,7 @@ ul.forms li.textsec textarea{
 	float:right;
 }
 ul.display li .bigsec h5{
-	width:350px;
+	/*width:350px;*/
 	float:left;
 	padding-bottom:3px;
 	line-height: 22px

@@ -26,9 +26,9 @@
             <ul class="display">
                 <?foreach($new_videos as $key => $value):?>
                 <li>
-                    <a href="#" class="thumb"><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
+                    <a href="<?=base_url()?>video/<?=$value->post_slug?>" class="thumb"><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
                     <div class="bigsec">
-                        <h5><a href="detail.html" class="colr"><?=$value->getPost_title()?></a></h5>
+                        <h5><a href="<?=base_url()?>video/<?=$value->post_slug?>" class="colr"><?=$value->getPost_title()?></a></h5>
                         <div class="clear"></div>
                         <div class="yourhere">
                             <p>You are here:</p>
