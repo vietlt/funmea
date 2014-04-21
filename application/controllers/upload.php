@@ -9,11 +9,21 @@ class upload extends MY_Controller
 		parent::__construct();
 		$this->load->model('post_model');
 		$this->load->helper('cus_string');
+		if(!$this->session->userdata('info_fb'))
+		{
+			redirect(base_url().'login','location');
+		}
+		$fb_config = array(
+            'appId' => APP_ID,
+            'secret' => SECRET_KEY,
+            'cookie' => TRUE,
+        );
+        $this->load->library('facebook', $fb_config);
 	}
 	
 	public function index()
 	{
-		$data['title'] = 'Funny & Meaning :: Đăng video mới';
+		$data['title'] = 'Đăng video mới :: Funny & Meaning ::';
 		$this->load->view('upload/index', $data);
 	}
 	
@@ -28,6 +38,7 @@ class upload extends MY_Controller
 				'post_title' => $videotitle,
 				'post_description' => $videodesc,
 				'video_code' => $videocode,
+				'create_by' => json_encode($this->session->userdata('info_fb')),
 				'post_type' => 1,
 				'post_status' => 1,
 				'post_slug' => gen_slug($videotitle)

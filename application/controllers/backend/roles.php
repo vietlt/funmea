@@ -20,10 +20,12 @@ class roles extends MY_Controller
     {
         $rolename = $this->input->post('rolename');
         $roledesc = $this->input->post('roledesc');
-        if ($this->roles_model->insert(array('role_name' => $rolename, 'role_description' => $roledesc)))
+        $last_id = $this->roles_model->insert(array('role_name' => $rolename, 'role_description' => $roledesc));
+        if ($last_id)
             echo json_encode(array(
-                'status' => true
-            ));
+                'status' => true,
+                'last_id' => $last_id
+             ));
         else
             echo json_encode(array(
                 'status' => false

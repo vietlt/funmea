@@ -23,6 +23,7 @@ class MY_Model extends CI_Model
      * without overwriting CI's global $this->db connection.
      */
     public $_database;
+
     
     protected $_entity_name = 'entity';
     /**
@@ -31,6 +32,7 @@ class MY_Model extends CI_Model
      */
     //    protected $primary_key = 'id';
     protected $primary_key;
+
     /**
      * Support for soft deletes and this model's 'deleted' key
      */

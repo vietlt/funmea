@@ -17,6 +17,15 @@ body {
 	font-size:12px;
 	color:#666;
 }
+
+html, body { height:100%;}
+
+#container {
+	min-height:100%;
+   position:relative;
+}
+
+ul li {list-style: none}
 .font-11 {font-size: 11px !important}
 .bg2 {
 	background-image:url(../images/bg2.jpg);
@@ -236,6 +245,9 @@ ul.forms li.textsec textarea{
 	background-repeat:no-repeat;
 	background-position:left center;
 	padding:0px 10px;
+}
+.top_sec .toplinks ul li ul li{
+	background-image:none;
 }
 .top_sec .toplinks ul li.first{
 	background-image:none;
@@ -491,6 +503,7 @@ ul.forms li.textsec textarea{
 	float:left;
 	background-color:#f9f9f9;
 	border:#f9f9f9 solid 10px;
+	margin-bottom: 122px;
 }
 /*
 =======================================================================
@@ -940,32 +953,28 @@ ul.display li p.date span{
 ul.videolist {
 	float:left;
 	list-style:none;
-	width:286px;
 }
 ul.videolist li{
 	float:left;
-	width:286px;
-	padding:10px 0px;
+	padding:5px 0px;
 }
 ul.videolist li .thumb{
 	float:left;
-	width:123px;
+	width:115px;
 }
 ul.videolist li .thumb a{
 	float:left;
 	width:102px;
-	height:66px;
 	border:#c7c7c7 solid 1px;
-	padding:3px;
+	padding:1px;
 	background-color:#FFF;
 }
 ul.videolist li .desc{
-	float:left;
-	width:163px;
+	float: right;
+	width: 150px;
 }
 ul.videolist li .desc a.title{
 	float:left;
-	width:163px;
 	padding:4px 0px 5px 0px;
 }
 ul.videolist li .desc p.viewscount{
@@ -973,6 +982,9 @@ ul.videolist li .desc p.viewscount{
 	width:163px;
 	padding-bottom:5px;
 	color:#888888;
+	background-image: url(../images/views.gif);
+	background-repeat: no-repeat;
+	text-indent: 20px
 }
 ul.videolist li .desc p.postedby{
 	float:left;
@@ -1007,6 +1019,30 @@ ul.videolist li .rated{
 	Categories
 =======================================================================
 */
+.list-random {margin-top: 4px}
+.side-bar{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	border: 1px solid #e1e1e1;
+}
+.side-bar ul {padding: 0px 10px 0px 10px}
+.side-bar h5 {
+width: 240px;
+height: 23px;
+padding: 9px 10px 6px 36px;
+float: left;
+background-color: #eeeeee;
+background-image: url(../images/playicon.gif);
+background-repeat: no-repeat;
+background-position: 10px 11px;
+font-weight: bold;
+border-bottom: 1px solid #d5d5d5;
+}
+.side-bar h2 {
+	font-size: 12px
+}
+
 .categories{
 	width:100%;
 	float:left;
@@ -1300,18 +1336,24 @@ ul.videolist li .rated{
 	margin-right:20px;
 	margin-top:4px;
 	line-height:18px;
+	font-size: 11px
+}
+.videodetail .shortdetail .count-view{
+	background-image:url(../images/views.gif) !important;
+}
+.videodetail .shortdetail .count-comment{
+	background-image:url(../images/comment.png) !important;
 }
 .videodetail .shortdetail .subscribe{
-	float:left;
+	float:right;
 }
 .videodetail .shortdetail .subscribe a{
 	float:left;
-	width:60px;
-	height:19px;
-	padding:4px 0px 0px 24px;
-	background-image:url(../images/subscribe.gif);
-	background-repeat:no-repeat;
+	padding:5px 10px;
 	border:#cccccc solid 1px;
+	margin-left: 1px;
+	width: 50px;
+	font-weight: bold;
 }
 .videodetail .shortdetail .videoviews{
 	float:right;
@@ -1477,8 +1519,10 @@ ul.videolist li .rated{
 	border-top:none;
 	width:675px;
 	padding:15px 10px;
-	margin-top:32px;
 	z-index:1;
+}
+.videotabs .tabcont .action{
+	margin: 0 0 10px 0;
 }
 .videotabs .tabcont input.chain{
 	float:left;
@@ -2060,11 +2104,13 @@ ul.numbrs li{
 =======================================================================
 */
 #footer {
-	width:100%;
 	background-image:url(../images/footer.gif);
 	background-repeat:repeat-x;
 	margin-top:10px;
-	float:left;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	/*height:60px;    Height of the footer */
 }
 .inner {
 	width:1000px;

@@ -5,19 +5,27 @@
     <!-- Column 1 -->
     <div class="col1">
         <div class="contact">
-            <div class="getintouch">
-                <h3 class="colr">Get in Touch</h3>
-                <p class="txt">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapib us ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum auctor ac, arcu.
-                </p>
-                <h4>Send Us Message</h4>
-                <input type="text" value="Name" id="nameBox" name="s" onblur="if(this.value == '') { this.value = 'Name'; }" onfocus="if(this.value == 'Name') { this.value = ''; }" class="bar left" />
-                <input type="text" value="Company" id="companyBox" name="s" onblur="if(this.value == '') { this.value = 'Company'; }" onfocus="if(this.value == 'Company') { this.value = ''; }" class="bar right" />
-                <input type="text" value="Email" id="emailBox" name="s" onblur="if(this.value == '') { this.value = 'Email'; }" onfocus="if(this.value == 'Email') { this.value = ''; }" class="bar left" />
-                <input type="text" value="Phone" id="phoneBox" name="s" onblur="if(this.value == '') { this.value = 'Phone'; }" onfocus="if(this.value == 'Phone') { this.value = ''; }" class="bar right" />
-                <textarea name="" cols="" rows="">Message</textarea>
-                <a href="#" class="buttonone"><span>Send</span></a>
-            </div>
+                <form class="form" id="form-contact" method="post">
+                    <p>
+                        <label class="label">Tên người gửi:</label>
+                        <input type="text" name="videotitle" id="videotitle" class="form-control" value="" class="required" pattern="" title="">
+                    </p>
+                    <p>
+                        <span class="label">Địa chỉ email:</span>
+                        <input type="text" name="videocode" id="videocode" class="form-control" value="" class="required" pattern="" title="">
+                    </p>
+                    <p>
+                        <span class="label">Tiêu đề:</span>
+                        <input type="text" name="videocode" id="videocode" class="form-control" value="" class="required" pattern="" title="">
+                    </p>
+                    <p>
+                        <span class="label">Nội dung:</span>
+                        <textarea class="textarea" id="videodesc" name="videodesc"></textarea>
+                    </p>
+                    <p>
+                         <button type="submit" id="btn-contact" class="btn">Đăng bài</button>
+                    </p>
+                </form> 
             <div class="clear"></div>
         </div>
         <div class="clear"></div>
@@ -56,3 +64,13 @@
             </ul>
         </div>
     </div>
+    <script src="<?=js_url()?>/libs/jquery.validate.js"></script>
+    <script type="text/javascript">
+        // $(document).on('click','#btn-contact',function(){
+        //     $('#form-contact').validate();
+        // });
+
+        $(document).ready(function(){
+                $("#form-contact").validate();
+            });
+    </script>

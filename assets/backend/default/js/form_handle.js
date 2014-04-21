@@ -45,7 +45,7 @@ function CheckLogin(base_url) {
             dataType: 'json',
             success: function(data) {
                 if (data.status) {
-                    window.location.href = base_url + 'backend/home/index';
+                    window.location.href = base_url + 'backend/home';
                 } else {
                     loginform.removeAlertBoxes();
                     loginform.alertBox(data.result, {
@@ -85,8 +85,12 @@ $(document).on('click', '#saverole', function() {
             dataType: 'json',
             success: function(data) {
                 if (data.status) {
-                    $('#list-roles').append('<li class="i-16-user-red"><a href="javascript:void(0);" rel="tooltip-top" original-title="' + $('#roledesc').val() + '">' + $('#rolename').val() + '</a></li>');
-                    alertify.success('T !');
+                    $('#list-roles').append('<li class="i-16-user-red" id="row-'+data.last_id+'"><a href="javascript:void(0);" rel="tooltip-top" original-title="' + $('#roledesc').val() + '">' + $('#rolename').val() + '</a>'+
+                        '<span style="float:right;font-weight: bold">'+
+                        '<a id="alert" onclick="EditRole('+data.last_id+')" href="javascript:void(0)">Sửa</a>&nbsp;&nbsp;&nbsp;' +
+                        '<a id="alert" onclick="DeleteRole('+data.last_id+')" href="javascript:void(0)">Xóa</a></span>' +
+                        '</li>');
+                    alertify.success('Thêm mới thành công !');
                     form.resetForm();
                 } else alertify.success('Thêm mới không thành công !');
             }
@@ -115,6 +119,11 @@ function DeleteRole(id) {
         }
     });
     return false;
+}
+function EditRole()
+{
+    resetDialog();
+    
 }
 //End form roles
 

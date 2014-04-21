@@ -10,12 +10,6 @@ class home extends MY_Controller {
 
 	public function index()
 	{
-		// if($this->session->userdata('info_fb'))
-		// {
-  //               echo '<pre>';
-  //               print_r($this->session->userdata('info_fb'));
-  //               exit();
-  //       }
 		$data['title'] = 'Funny & Meaning :: Hài hước & Ý nghĩa';
 		$data['new_videos'] = $this->post_model->get_new_videos(10);
 		$data['unwatch_videos'] = $this->post_model->get_unwatch_videos(10);

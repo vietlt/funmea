@@ -2,7 +2,7 @@
     <!-- Bread Crumb -->
     <div id="crumb">
         <div class="allvideos_heading">
-            <h4>Tất cả Videos</h4>
+            <h4><?if(isset($title_breakcrumb)); echo $title_breakcrumb;?></h4>
             <p>(Switch to 5000 DVDs)</p>
         </div>
         <div class="clear"></div>
@@ -24,7 +24,7 @@
             <div class="clear"></div>
             <!-- Video Listing -->
             <ul class="display">
-                <?foreach($new_videos as $key => $value):?>
+                <?foreach($videos as $key => $value):?>
                 <li>
                     <a href="<?=base_url()?>video/<?=$value->post_slug?>" class="thumb"><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
                     <div class="bigsec">
@@ -43,7 +43,7 @@
                         <div class="clear"></div>
                         <div class="postedby">
                             <p class="postbytxt">By: <a href="#">RayWilliams</a></p>
-                            <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                            <p class="views"><span class="left">Lượt xem: </span><a href="#"><?=$value->getCount_view()?></a></p>
                         </div>
                         <div class="right">
                             <p class="time">1:50</p>
@@ -77,14 +77,8 @@
                 <?endforeach;?>
             </ul>
             <div class="clear"></div>
-            <!-- Small Banner -->
-            <div class="small_banner">
-                <a href="#"><img src="<?=img_url()?>/apple_banner.gif" alt="" /></a>
-            </div>
-            <div class="clear"></div>
             <!-- Pagination -->
             <div class="paginations">
-                <h5 class="pagehead">PAGE</h5>
                 <ul>
                     <li class="leftpage"><a href="#">&nbsp;</a></li>
                     <li class="pages"><a href="#">1</a></li>

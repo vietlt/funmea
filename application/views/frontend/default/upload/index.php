@@ -78,7 +78,8 @@
                 <div class="tab_container">
                     <div class="tab_container_in">
                         <!-- Recent --> 
-                        <div style="display: none;" id="tab_sidebar_recent" class="tab_sidebar_list">                   
+                        <div style="display: none;" id="tab_sidebar_recent" class="tab_sidebar_list">  
+                            <div class="clear"></div>                 
                             <form class="form" id="form-post-videos" method="post">
                                 <p>
                                     <label class="label">Tiêu đề bài đăng:</label>
@@ -100,6 +101,7 @@
                         <!-- END -->
                         <!-- Top Rated -->
                         <div style="display: none;" id="tab_sidebar_comments" class="tab_sidebar_list">  
+                            <div class="clear"></div>
                             <form class="form">
                                 <p>
                                     <span class="label">Tiêu đề bài đăng:</span>
@@ -121,6 +123,7 @@
                         <!-- END -->
                         <!-- Most Commented -->
                         <div style="display: none;" id="tab_sidebar_tags" class="tab_sidebar_list"> 
+                            <div class="clear"></div>
                             <form class="form">
                                 <p>
                                     <span class="label">Tiêu đề bài đăng:</span>

@@ -42,6 +42,8 @@ $route['default_controller'] = "home";
 $route['backend'] = "backend/login";
 $route['404_override'] = '';
 $route['video/(:any)'] = 'video/detail/$1';
+$route['videos/(:any)'] = 'video/index/$1';
+$route['videos'] = 'video/index';
 
 
 /* End of file routes.php */

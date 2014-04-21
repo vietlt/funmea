@@ -13,11 +13,13 @@
                 <div class="videoby">
                     <a href="#" class="videoavatar"><img src="<?=img_url()?>/videoby.gif" alt="" /></a>
                     <p>Đăng bởi</p>
-                    <a href="#" class="bold name">Việt Lại</a>
+                    <a href="<?=$detail->getLinkFb()?>" class="bold name"><?=$detail->getCreate_by()?></a>
                 </div>
-                <div class="videodate">Lúc 12h30', ngày 06/09/2014</div>
-                <div class="subscribe"><a href="#">Subscribe</a></div>
-                <div class="videoviews"><p><?=$detail->getVideo_code()?> views</p></div>
+                <div class="videodate">Khoảng 1 giờ trước</div>
+                <div class="videodate count-comment"><div class="fb-comments-count" data-href="<?=current_url()?>">0</div></div>
+                <div class="videodate count-view"><?if($detail->getCount_view()==0):?> 0 <?else:?><?=$detail->getCount_view()?><?endif;?> lượt xem</div>
+                <div class="subscribe"><a href="#" style="text-align: right">Tiếp &raquo;</a></div>
+                <div class="subscribe"><a href="#">&laquo; Trước</a></div>
             </div>
             <div class="clear"></div>
             <!-- Big Video -->
@@ -33,223 +35,46 @@
             <div class="clear"></div>
             <!-- Video tabs -->
             <div class="videotabs">
-                <div class="tabbuttons">
-                    <ul class="likedilike">
-                        <li><a href="#" class="like">Like</a></li>
-                        <li><a href="#" class="dislike">Dislike</a></li>
-                    </ul>
-                    <ul class="tablinksselected">
-                        <li><a href="#"><span class="sharebtn">Share</span></a></li>
-                    </ul>
-                    <ul class="tablinks">
-                        <li><a href="#"><span class="embed">Embed</span></a></li>
-                    </ul>
-                    <ul class="tablinks">
-                        <li><a href="#"><span class="addto">Add to</span><span class="downarrow">&nbsp;</span></a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
                 <div class="tabcont">
-                    <input type="text" value="htttp://www.Vidsea.com/watch?v=lpQTeYG6cGM" name="s" class="chain" />
-                    <input type="text" value="200" name="s" class="chrome" />
-                    <input type="text" value="1001" name="s" class="facebook1" />
-                    <input type="text" value="2000" name="s" class="twitter1" />
-                    <div class="clear"></div>
-                    <div class="shareicons">
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon1.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon2.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon3.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon4.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon5.gif" alt="" /></a>
-                        <a href="#" class="icons"><img src="<?=img_url()?>/icon6.gif" alt="" /></a>
+                    <div class="action">
+                        <div class="fb-like" data-href="<?=current_url()?>" data-layout="button_count" data-width="10px" data-height="10px" data-action="like" data-show-faces="false" data-share="false"></div>
+                        <div class="fb-share-button" data-href="<?=current_url()?>" data-type="button_count"></div>
                     </div>
-                </div>
+                    <div class="clear"></div>
+                    <!-- Comments -->
+                    <div class="fb-comments" data-href="<?=current_url()?>" data-numposts="10" data-width="675"  data-colorscheme="light"></div>
+                    <div class="clear"></div>  
+                </div>  
             </div>
-            <!-- Comments -->
-            <div id="fb-root"></div>
-            <script>
-                var appid = <?=APP_ID?>;
-                (function(d, s, id) {
-                      var js, fjs = d.getElementsByTagName(s)[0];
-                      if (d.getElementById(id)) return;
-                      js = d.createElement(s); js.id = id;
-                      js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=1479900725559027";
-                      fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-            </script>
-            <div class="fb-comments" data-href="<?=current_url()?>" data-numposts="10" data-width="697"  data-colorscheme="light"></div>
-            <div class="clear"></div>
+            
         </div>
     </div>
     <!-- Column 2 -->
     <div class="col2">
         <!-- Tabs -->
-        <div class="tabs">
-            <div class="tab_menu_container">
-                <ul id="tab_menu">  
-                    <li><a class="current" rel="tab_sidebar_recent">Recent</a></li>
-                    <li><a class="" rel="tab_sidebar_comments">Comments</a></li>
-                    <li><a class="" rel="tab_sidebar_tags">Tags</a></li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-            
-            <div class="tab_container">
-                <div class="tab_container_in">
-                    <!-- Recent --> 
-                    <div style="display: none;" id="tab_sidebar_recent" class="tab_sidebar_list">                   
-                        <ul class="videolist">
-                            <li>
-                                <div class="thumb">
-                                <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                    <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video7.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                    <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video8.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
-                                </div>
-                            </li>
-                        </ul>           
-                    </div> 
-                    <!-- END -->
-                    <!-- Top Rated -->
-                    <div style="display: none;" id="tab_sidebar_comments" class="tab_sidebar_list">  
-                        <ul class="videolist">
-                            <li>
-                                <div class="thumb">
-                                    <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video8.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                    <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video7.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> 
-                    <!-- END -->
-                    <!-- Most Commented -->
-                    <div style="display: none;" id="tab_sidebar_tags" class="tab_sidebar_list"> 
-                        <ul class="videolist">
-                            <li>
-                                <div class="thumb">
-                                <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video5.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">Brian</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                    <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video7.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb">
-                                    <a href="#"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="<?=img_url()?>/video8.gif" alt="" /></a>
-                                </div>
-                                <div class="desc">
-                                    <h5><a class="colr title" href="detail.html">Lorem ipsum dolor sit</a></h5>
-                                    <p class="viewscount">2,061,785 Views</p>
-                                    <p class="postedby">Posted By: <a href="#">RayWilliams</a></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END -->
-                    <div class="clear"></div>
-                </div>
-            </div>
+        <div class="side-bar">
+            <h5>Video ngẫu nhiên</h5>
             <div class="clear"></div>
+            <div class="list-random">
+                <?foreach($videos_random as $key => $value):?>
+                <ul class="videolist">
+                    <li>
+                        <div class="thumb">
+                        <a href="<?=base_url()?>video/<?=$value->getPost_slug()?>"><img src="http://img.youtube.com/vi/<?=$value->getVideo_code()?>/3.jpg" alt="" width="100%" height="100%" /></a>
+                        </div>
+                        <div class="desc">
+                            <h2><a class="colr title" href="<?=base_url()?>video/<?=$value->getPost_slug()?>"><?=$value->getPost_title()?></a></h2>
+                            <p class="viewscount"><?=$value->getCount_view()?> lượt xem</p>
+                            <div class="fb-comments-count" data-href="<?=base_url()?>video/<?=$value->getPost_slug()?>">0</div>
+                        </div>
+                    </li>
+                </ul> 
+                <?endforeach;?>
+            </div>
         </div>
         <div class="clear"></div>
         <!-- Top Searches -->
         <div class="topsearches">
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=1479900725559027";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-like-box" data-href="https://www.facebook.com/funmea" data-width="286px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
         </div>
         <!-- Advertisment -->

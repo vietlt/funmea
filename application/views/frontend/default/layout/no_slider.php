@@ -4,17 +4,19 @@
     <?$this->load->block_view('global/head')?>
 </head>
 <body>
-<span class="smalllines">&nbsp;</span>
-<!-- Wrapper -->
-<div id="wrapper_sec">
+<div id="container">
+	<span class="smalllines">&nbsp;</span>
+	<!-- Wrapper -->
+	<div id="wrapper_sec">
 
-	<?$this->load->block_view('global/header')?>
-	<div id="content_sec">
-	<?=$layout_content?>
+		<?$this->load->block_view('global/header')?>
+		<div id="content_sec">
+		<?=$layout_content?>
+		</div>
+	    
 	</div>
-    
-</div>
-<div class="clear"></div>
+	<div class="clear"></div>
     <?$this->load->block_view('global/footer')?>
+</div>    
 </body>
 </html>

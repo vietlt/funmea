@@ -129,7 +129,7 @@
 		<div id="user-info">
 			<p>
 				<span class="messages">Xin chào, <a href="javascript:void(0);"><?=$this->session->userdata('account_info')['full_name']?></a> ( <a href="javascript:void(0);"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/mail.png" alt="Messages"> 1 tin mới</a> )</span>
-				<a href="javascript:void(0)" class="toolbox-action button">Cài đặt</a> <a href="<?=base_url()?>backend/login/logout" class="button red">Thoát</a>
+				<a href="javascript:void(0)" class="toolbox-action button">Cài đặt</a> <a href="<?=base_url()?>backend/logout" class="button red">Thoát</a>
 			</p>
 		</div> <!--! end of #user-info -->
 		
@@ -156,7 +156,7 @@
     			<li><a href="#">Profile</a></li>
     			<li><a href="#">Settings</a></li>
     			<li><a href="#">Messages</a></li>
-    			<li><a href="<?=base_url()?>backend/login/logout">Thoát</a></li>
+    			<li><a href="<?=base_url()?>backend/logout">Thoát</a></li>
     		</ul>
     		
     		<div class="clearfix"></div>

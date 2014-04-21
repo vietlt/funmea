@@ -5,8 +5,8 @@
             <h3>Danh sách videos</h3>
             <div class="clear"></div>
             <ul class="display">
-                <?foreach($new_videos as $key => $value):?>
-                <?if($value->post_type==1):?>
+                <?php foreach($new_videos as $key => $value):?>
+                <?php if($value->post_type==1):?>
                     <li>
                         <a href="<?=base_url()?>video/<?=$value->post_slug?>" class="thumb"></span><img src="http://img.youtube.com/vi/<?=$value->video_code?>/0.jpg" alt="" /></a>
                         <div class="bigsec">
@@ -18,7 +18,7 @@
                             <div class="clear"></div>
                             <div class="postedby">
                                 <p class="postbytxt">Đăng bởi: <a href="#">Việt Milano</a></p>
-                                <p class="views"><span class="left">Lượt xem: </span><a href="#">800</a></p>
+                                <p class="views"><span class="left">Lượt xem: </span><a href="#"><?php echo ($value->getCount_view()>0) ? $value->getCount_view() : '0';?></a></p>
                             </div>
                             <div class="right">
                                 <p class="time">1:50</p>
@@ -30,6 +30,7 @@
                                     <a href="#" class="colrd">&nbsp;</a>
                                     <a href="#" class="greyscal">&nbsp;</a>
                                 </div>
+                                <fb:comments-count href="<?=base_url()?>video/<?=$value->getPost_slug()?>"></fb:comments-count> awesome comments 
                             </div>
                         </div>
                         <div class="smallsec">
@@ -222,11 +223,10 @@
         <!-- Categories -->
         <div class="categories">
             <h5>Nhanh tay kết nối Funmea.com</h5>
-                <ul>
-                    <li><a href="#" class="youtube">www.YouTube.com</a></li>
-                    <li><a href="#" class="flickr">www.Flickr.com</a></li>
-                    <li><a href="#" class="facebook">www.facebook.com</a></li>
-                </ul>
+            <ul style="margin-top:4px">
+                <p style="margin-bottom:10px"><strong>Like Funmea trên Facebook để cập nhật thường xuyên những video chất lượng !</strong></p>
+                <div class="fb-like" data-href="https://facebook.com/funmea" data-layout="standard" data-width="245" data-action="like" data-show-faces="true" data-share="true"></div>
+            </ul>
         </div>
         <div class="clear"></div>
     </div>

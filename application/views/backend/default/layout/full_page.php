@@ -1,4 +1,4 @@
-<?if(!$this->session->userdata('account_info')) redirect('backend/login','location')?>
+<?if(!$this->session->userdata('account_info')) redirect(base_url('backend/login'),'location')?>
 <!DOCTYPE html>
 <html lang="">
     <head>

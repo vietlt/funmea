@@ -25,14 +25,14 @@
         <div class="clear"></div>
         <!-- Footer content -->
     </div>
-</div>
-<div class="clear"></div>
-<div id="copyrights">
-    <div class="inner">
-        <p class="font-11">© <?=date(Y)?> <a href="#" class="link-website">Funmea.com</a> - Phiên bản thử nghiệm.</p>
-        <div class="designdby">
-            <p>Designed By: </p>
-            <a href="#" class="chimplogo">&nbsp;</a>
+    <div class="clear"></div>
+    <div id="copyrights">
+        <div class="inner">
+            <p class="font-11">© <?=date(Y)?> <a href="#" class="link-website">Funmea.com</a> - Phiên bản thử nghiệm.</p>
+            <div class="designdby">
+                <p>Designed By: </p>
+                <a href="#" class="chimplogo">&nbsp;</a>
+            </div>
         </div>
     </div>
 </div>

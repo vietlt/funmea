@@ -1,5 +1,5 @@
 <?php
-
+echo 'HÙng Phắc Cơ import ngay cái ddb cho nó chậy';exit();
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

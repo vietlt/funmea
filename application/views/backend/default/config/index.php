@@ -35,7 +35,7 @@
                     <p><label for="textarea">About :</label></p>
 
                     <textarea type="text" id="about" data-val-required="" name="txtAbout"><?=$config->getAbout()?></textarea>
-                    <script src="<?=base_url()?>resource/ckeditor/ckeditor.js"></script>
+                    <script src="<?=base_url()?>assets/ckeditor/ckeditor.js"></script>
                     <script type="text/javascript">
                         CKEDITOR.replace('about');
                     </script>

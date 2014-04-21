@@ -13,4 +13,4 @@
 <link rel="stylesheet" href="<?=backend_css_url()?>/jquery-ui-1.8.15.custom.css"> <!-- jQuery UI, optional -->
 <link rel="stylesheet" href="<?=backend_css_url()?>/modal/alertify.core.css" />
 <link rel="stylesheet" href="<?=backend_css_url()?>/modal/alertify.default.css" id="toggleCSS" />
-<link href="//fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+<!-- <link href="//fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css"> -->

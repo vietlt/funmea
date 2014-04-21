@@ -11,12 +11,14 @@ class login extends MY_Controller
 
     public function index()
     {
+        
         if($this->session->userdata('account_info'))
+            redirect(base_url('backend/home'),'location');
+        else
         {
-            redirect('backend/home','location');die();
+            $dir = $this->config->item('backend_template_dir');
+            $this->load->default_view('backend/' . $dir . '/login/index');
         }
-        $dir = $this->config->item('backend_template_dir');
-        $this->load->default_view('backend/' . $dir . '/login/index');
     }
 
     public function check_login()
@@ -38,12 +40,6 @@ class login extends MY_Controller
                 'status' => false,
                 'result' => 'Thông tin không chính xác'
             ));
-    }
-
-    public function logout()
-    {
-        $this->session->unset_userdata('account_info');
-        redirect('backend/login','location');
     }
 }
 /* End of file login.php */

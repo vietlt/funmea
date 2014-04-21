@@ -17,10 +17,10 @@
 	}(document));
 	
 	// Hàm FBLogin sử dụng đơn giản đi đến controller Login 
-	function FBLogin(){
+	function FBLogin(base_url){
 		FB.login(function(response){
 			if(response.authResponse){
-				window.location.href = <?=base_url()?>+"login/check";
+				window.location.href = base_url+"login/check";
 			}
 		}, {scope: 'email,user_likes'});
 	}
@@ -29,8 +29,11 @@
         <h5>Đăng nhập qua tài khoản facebook</h5>
     </div>
 <div class="main-wrap">
-	<a onclick="FBLogin();" style="cursor: pointer;">
-		<img alt="" src="<?=img_url()?>/fb-button.png"/>	
+<p style="line-height: 40px">&nbsp;&nbsp;&nbsp;Bạn phải đăng nhập để có thể sử dụng những chức năng như đăng bài , comment ...</p>
+<p style="padding: 40px 0 50px">
+	<a onclick="FBLogin('<?=base_url()?>');" style="cursor: pointer;">
+		<img alt="" src="<?=img_url()?>/fb-button.png"/>
 	</a>
+</p>
 </div>
 
