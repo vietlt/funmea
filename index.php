@@ -1,4 +1,4 @@
-<?die('vai ca lon');?>
+<?php die('vai ca lon');?>
 
 <?php
 /*
