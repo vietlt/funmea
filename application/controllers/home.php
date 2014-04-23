@@ -10,6 +10,7 @@ class home extends MY_Controller {
 
 	public function index()
 	{
+		die('Hereeeeeeeeeeeeeeeeeee');
 		$data['title'] = 'Funny & Meaning :: Hài hước & Ý nghĩa';
 		$data['new_videos'] = $this->post_model->get_new_videos(10);
 		$data['unwatch_videos'] = $this->post_model->get_unwatch_videos(10);

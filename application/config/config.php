@@ -18,7 +18,7 @@ function __autoload($class) {
 | path to your installation...
 |
 */
-$config['base_url']	= 'http://funmea.com/hhihihi/sdfkkjs';
+$config['base_url']	= 'http://funmea.com/';
 
 /*
 |--------------------------------------------------------------------------
