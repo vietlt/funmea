@@ -1,4 +1,3 @@
-<?php die('vai ca lon');?>
 
 <?php
 /*
