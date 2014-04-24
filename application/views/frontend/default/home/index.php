@@ -22,15 +22,7 @@
                             </div>
                             <div class="right">
                                 <p class="time">1:50</p>
-                                <p class="date"><span>3 days ago</span></p>
-                                <div class="rating">
-                                    <a href="#" class="colrd">&nbsp;</a>
-                                    <a href="#" class="colrd">&nbsp;</a>
-                                    <a href="#" class="colrd">&nbsp;</a>
-                                    <a href="#" class="colrd">&nbsp;</a>
-                                    <a href="#" class="greyscal">&nbsp;</a>
-                                </div>
-                                <fb:comments-count href="<?=base_url()?>video/<?=$value->getPost_slug()?>"></fb:comments-count> awesome comments 
+                                <!-- <fb:comments-count href="<?=base_url()?>video/<?=$value->getPost_slug()?>"></fb:comments-count> -->
                             </div>
                         </div>
                         <div class="smallsec">

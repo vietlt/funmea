@@ -1,3 +1,110 @@
+#colophon {width: 1000px; margin: auto}
+#footer {
+  background:#FFF;
+  border-top: 1px solid #E3E3E3;
+  padding-top: 20px;
+  padding-bottom: 10px
+}
+.full-width #content,.widecolumn{
+  width:100%;
+  float:none;
+}
+#copyright, #credits {
+font-size: 11px;
+margin: 0;
+display: inline;
+}
+
+/*== Footer Navigation
+ *=================================*/
+#footer-nav {
+  margin:0 0 2px;
+}
+#footer-nav ul {
+  overflow:hidden;
+  margin:0;
+  line-height: 30px;
+}
+#footer-nav li {
+  display:inline;
+  padding:0 10px;
+  border-left:1px solid #DDD;
+  line-height:1;
+  font-weight:bold;
+}
+#footer-nav li:first-child {
+  padding-left:0;
+  border-left:0;
+}
+#footer-nav li a:hover {
+  color: #111;
+  text-decoration:none;
+}
+
+/*== Social Navigation
+ *=================================*/
+#social-nav {
+  float:right;
+  text-align:right;
+}
+#social-nav .desc {
+  display:block;
+  margin:-3px 0 3px;
+}
+#social-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#social-nav li {
+  display:inline;
+  margin:0 0 0 8px;
+}
+#social-nav a {
+  display:inline-block;
+  height:24px;
+  width:24px;
+  text-indent:-987em;
+  overflow:hidden;
+  line-height:987em;
+  background:url(images/social.png) no-repeat 0 0;
+}
+#social-nav a:hover {
+  background-color:none;
+  opacity:0.75;
+  filter:alpha(opacity=85);
+}
+#social-nav .facebook a {
+  background-position:0 -30px;
+}
+#social-nav .gplus a {
+  background-position:0 -60px;
+}
+#social-nav .rss a {
+  background-position:0 -90px;
+}
+#social-nav .news a {
+  background-position: 0 -120px;
+}
+#social-nav .youtube a {
+  background-position:0 -150px;
+}
+#social-nav .vimeo a {
+  background-position: 0 -180px;
+}
+
+/*= Comments & Respond
+ *==================================================================*/
+#comments {
+  margin:20px 0
+}
+#comments .section-header {
+  margin: 0
+}
+
+
+
+
 .dropdown {
   position: relative;
 }

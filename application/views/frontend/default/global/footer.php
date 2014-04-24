@@ -1,38 +1,22 @@
-<!-- Footer -->
-<div id="footer">
-    <div class="inner">
-        <!-- Top button Section -->
-        <div class="topbutonsec"><a href="#">Top</a></div>
-        <div class="clear"></div>
-        <!-- Footer - Search - Share -->
-        <div class="foot_search_share">
-            <!-- Footer - search -->
-            <div class="foot_search">
-                <input type="text" value="Enter keyword to search" id="searchBox2" name="s" onblur="if(this.value == '') { this.value = 'Enter keyword to search'; }" onfocus="if(this.value == 'Enter keyword to search') { this.value = ''; }" class="bar" />
-                <a href="#" class="searchbtn buttonone right"><span>Search</span></a>
-            </div>
-            <!-- Footer -share -->
-            <div class="share">
-                <a href="#"><img src="<?=img_url()?>/facebook.png" alt="" /></a>
-                <a href="#"><img src="<?=img_url()?>/twitter.png" alt="" /></a>
-                <a href="#"><img src="<?=img_url()?>/rss.png" alt="" /></a>
-                <a href="#"><img src="<?=img_url()?>/youtube.png" alt="" /></a>
-                <a href="#"><img src="<?=img_url()?>/linkdin.png" alt="" /></a>
-                <a href="#"><img src="<?=img_url()?>/del.png" alt="" /></a>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-        <!-- Footer content -->
-    </div>
-    <div class="clear"></div>
-    <div id="copyrights">
-        <div class="inner">
-            <p class="font-11">© <?=date(Y)?> <a href="#" class="link-website">Funmea.com</a> - Phiên bản thử nghiệm.</p>
-            <div class="designdby">
-                <p>Designed By: </p>
-                <a href="#" class="chimplogo">&nbsp;</a>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="clear:both"></div>
+<footer id="footer">
+   <!-- end #footbar -->
+   <div id="colophon">
+      <div class="wrap cf">
+         <!-- end #social-nav -->          
+         <div id="footer-nav">
+            <ul id="menu-footer-menu" class="menu">
+               <li ><a href="">Trang chủ</a></li>
+               <li ><a href="">Video</a></li>
+               <li ><a href="">Link hay</a></li>
+               <li ><a href="">Giới thiệu</a></li>
+               <li ><a href="">Liên hệ</a></li>
+            </ul>
+         </div>
+         <!-- end #footer-nav -->            
+         <p id="copyright">Copyright <?=date('Y')?> © <a href="<?=base_url()?>">Funmea.com</a> phiên bản thử nghiệm.</p>
+         <p id="credits">Powered by <a target="_blank" href="javascript:(void)"><strong>CI-Master</strong> V1.0 Beta !</a></p>
+      </div>
+   </div>
+   <!-- end #colophon -->
+</footer>

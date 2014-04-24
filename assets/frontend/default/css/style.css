@@ -12,7 +12,7 @@ body {
 	/*background-image:url(../images/.jpg);*/
 	background-repeat:no-repeat;
 	background-position:50% 430px;
-	background-color:#ececec;
+	background-color:#f9f9f9;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:12px;
 	color:#666;
@@ -503,7 +503,6 @@ ul.forms li.textsec textarea{
 	float:left;
 	background-color:#f9f9f9;
 	border:#f9f9f9 solid 10px;
-	margin-bottom: 122px;
 }
 /*
 =======================================================================
@@ -2103,15 +2102,6 @@ ul.numbrs li{
 	Footer
 =======================================================================
 */
-#footer {
-	background-image:url(../images/footer.gif);
-	background-repeat:repeat-x;
-	margin-top:10px;
-	position:absolute;
-	bottom:0;
-	width:100%;
-	/*height:60px;    Height of the footer */
-}
 .inner {
 	width:1000px;
 	margin:0px auto;
@@ -2120,150 +2110,6 @@ ul.numbrs li{
 	color: rgb(204, 58, 58);
 	font-size: 12px;
 	font-weight: bold;
-}
-/*
-=======================================================================
-	Footer top button
-=======================================================================
-*/
-#footer .topbutonsec{
-	width:1000px;
-}
-#footer .topbutonsec a{
-	width:53px;
-	height:22px;
-	background-image:url(../images/top.gif);
-	background-repeat:no-repeat;
-	display:inline-block;
-	color:#FFF;
-	padding:3px 0px 0px 19px;
-	float:right;
-}
-/*
-=======================================================================
-	Footer search + share
-=======================================================================
-*/
-#footer .foot_search_share{
-	width:1000px;
-	padding-bottom:10px;
-}
-/*
-=======================================================================
-	Footer - search
-=======================================================================
-*/
-#footer .foot_search_share .foot_search{
-	width:425px;
-	height:25px;
-	background-image:url(../images/search_bg_big.gif);
-	background-repeat:no-repeat;
-	border:#cbcbcb solid 1px;
-	float:left;
-}
-#footer .foot_search_share .foot_search input.bar{
-	width:315px;
-	height:24px;
-	line-height:26px;
-	border:transparent solid 1px;
-	background-color:transparent;
-	margin-left:30px;
-	color:#aaaaaa;
-	float:left;
-}
-#footer .foot_search_share .foot_search a.searchbtn{
-	margin:0px 0px 0px 0px;
-}
-/*
-=======================================================================
-	Footer - share
-=======================================================================
-*/
-#footer .foot_search_share .share{
-	float:right;
-	margin-right:75px;
-}
-#footer .foot_search_share .share a{
-	margin-left:10px;
-}
-#footer .footer_cont{
-	width:1000px;
-	padding-bottom:10px;
-	padding-top:20px;
-	background-image:url(../images/footer_shadow.gif);
-	background-repeat:no-repeat;
-	background-position:top center;
-}
-/*
-=======================================================================
-	Footer - sec1
-=======================================================================
-*/
-#footer .footer_sec1{
-	width:310px;
-	float:left;
-}
-/*
-=======================================================================
-	Footer - logo
-=======================================================================
-*/
-#footer .foot_logo{
-	width:310px;
-	float:left;
-	padding:10px 0px 30px 0px;
-}
-#footer .foot_logo h6{
-	font-size:11px;
-	color:#FFF;
-	padding:3px 0px 0px 32px;
-}
-/*
-=======================================================================
-	Footer - our network
-=======================================================================
-*/
-.ournetwork{
-	width:310px;
-	float:left;
-}
-.ournetwork h3{
-	background-image:url(../images/network.png);
-	background-repeat:no-repeat;
-	background-position:0px 0px;
-	padding:0px 0px 5px 30px;
-	width:280px;
-	border-bottom:#4f4f4f solid 1px;
-	color:#FFF;
-	margin-bottom:10px;
-}
-.ournetwork ul{
-	list-style:none;
-	float:left;
-	width:310px;
-}
-.ournetwork ul li{
-	float:left;
-	width:310px;
-	padding:5px 0px;
-}
-.ournetwork ul li a{
-	float:left;
-	width:284px;
-	padding:0px 0px 0px 26px;
-	height:16px;
-	background-repeat:no-repeat;
-	background-position:0px 0px;
-	color:#FFF;
-}
-.ournetwork ul li a.youtube{
-	background-image:url(../images/playicon.gif);
-}
-.ournetwork ul li a.flickr{
-	background-image:url(../images/flikr.gif);
-}
-.ournetwork ul li a.facebook{
-	background-image:url(../images/facebook_icon.gif);
 }
 
 
