@@ -14,5 +14,6 @@
 <script defer src="<?php echo backend_js_url() ?>/script.js"></script> <!-- Generic scripts -->
 <script defer src="<?php echo backend_js_url() ?>/my_script.js"></script> <!-- Generic scripts -->
 <script src="<?php echo backend_js_url() ?>/modal/alertify.js"></script>
-<script src="<?php echo backend_js_url() ?>/my_script.js"></script
+<script src="<?php echo backend_js_url() ?>/my_script.js"></script>
 <script defer src="<?=backend_js_url()?>/form_handle.js"></script>
+

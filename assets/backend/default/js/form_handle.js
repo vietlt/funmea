@@ -173,5 +173,34 @@ function DeletePermission(id) {
 }
 //End form permission
 
+//Begin form video
+function DeleteVideo(id)
+{
+    console.log(id);
+    resetDialog();
+    alertify.confirm("Bạn đã chắc chắn thực hiện hành động này ?", function(e) {
+        if (e) {
+            $.ajax({
+                url: 'video/delete',
+                type: 'post',
+                data: {
+                    videoid: id
+                },
+                success: function(data) {
+                    if (data) {
+                        $('#row-' + id).remove();
+                        alertify.success('Xóa bản ghi thành công !');
+                    } else alertify.error("Thực hiện hành động không thành công !");
+                }
+            });
+        } else {
+            alertify.error("Không làm gì cả");
+        }
+    });
+    return false;
+}
+
+//End form video
+
 
 var alertBox = new ShowMessage();

@@ -6,6 +6,12 @@ class post_model extends MY_Model
     protected $primary_key = 'post_id';
     protected $_entity_name = 'post_entity';
     
+    public function get_all_desc()
+    {
+        $this->order_by($this->primary_key,'DESC');
+        return $this->get_all();
+    }
+
     public function get_new_videos($limit)
     {
         $this->limit($limit);

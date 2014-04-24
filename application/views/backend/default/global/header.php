@@ -167,10 +167,11 @@
 	    	<ul class="menu collapsible shadow-bottom">
 	    		<li><a href="<?=base_url()?>backend"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/dashboard.png"><b>Bảng điều khiển</b><span class="badge">2</span></a></li>
 	    		<li><a href="<?=base_url()?>backend/config"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/application-form.png">Cấu hình webiste</a></li>
-	    		<li><a href="<?=base_url()?>backend/admin"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/table.png">Quản trị người dùng</a></li>
+	    		<li><a href="<?=base_url()?>backend/admin"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/user-black.png">Quản trị người dùng</a></li>
+	    		<li><a href="<?=base_url()?>backend/video"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/media-players.png">Quản trị videos</a></li>
 	    		<li><a href="<?=base_url()?>backend/customer"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/chart.png">Quản trị khách hàng</a></li>
-	    		<li class="expand">
-	    			<a href="javascript:void(0);" class="current"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/clipboard-list.png">Quản trị phân quyền<span class="badge grey">3</span></a>
+	    		<li>
+	    			<a href="javascript:void(0);"><img src="<?=backend_img_url()?>/icons/packs/fugue/16x16/clipboard-list.png">Quản trị phân quyền<span class="badge grey">3</span></a>
 	    			<ul class="sub">
 	    				<li><a href="<?=base_url()?>backend/roles" class="current">Chức danh</a></li>
 	    				<li><a href="<?=base_url()?>backend/permission">Quyền hạn</a></li>

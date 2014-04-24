@@ -116,7 +116,7 @@
 .table tbody th, .table tbody td, .table tfoot th, .table tfoot td {
 	vertical-align: top;
 	text-align: left;
-	padding: 7px;
+	padding: 7px 7px 7px 12px;
 	border-left: 1px dotted #bebebe;
 }
 

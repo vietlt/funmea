@@ -65,7 +65,6 @@
                     </ul>
                 </div>
             </form>
-            <script defer src="<?=backend_js_url()?>/form_handle.js"></script>
         </div>
     </div>
 
