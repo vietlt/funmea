@@ -36,4 +36,3 @@
         </div>
     </div>
 </div>
-<?$this->load->block_view('global/js')?>
